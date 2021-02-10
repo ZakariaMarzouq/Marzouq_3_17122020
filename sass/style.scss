@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Shrikand-Regular';
+    src:url('Shrikhand-Regular.tff') format(tff);
+}
+
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?iefix') format('eot'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+}
+
+header {
+    .logo {
+        
+        font-family: 'Shrikhand-Regular', sans-serif;
+        text-align: center;
+        height: 60px;
+        
+    }
+}
+
+input {
+    background-color:#fff;
+    width: 100vw;
+    height: 2rem;
+
+}
+
+.section_explore {
+    font-family: ROBOT;
+}
+
+
+
+
+
