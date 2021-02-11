@@ -1,20 +1,17 @@
 @font-face {
     font-family: 'Shrikhand-Regular';
     src:url('/fonts/Shrikhand-Regular.ttf') format('truetype');
-    src: url(/fonts/);
+    
 }
 
 @font-face{ 
-	font-family: 'ROBOT';
-	src: url('/fonts/web\ fonts/ROBOT');
-	src: url('/fonts/web\ fonts/ROBOT') format('eot'),
-	     url('/fonts/web\ fonts/ROBOT') format('woff'),
-	     url('/fonts/web\ fonts/ROBOT') format('truetype'),
-	     url('/fonts/web\ fonts/ROBOT') format('svg');
+	font-family: 'ROBOTO';
+	src: url('/Fonts/Roboto-Regular.ttf') format('truetype');
+	
 }
 
 $police_primaire:'Shrikhand';
-$police_secondaire :'ROBOT';
+$police_secondaire :'ROBOTO';
 $color_primaire: #9356DC;
 $color_secondaire:#FF79DA;
 $color_tertiaire:#99E2D0;
@@ -26,6 +23,7 @@ body {
   flex-direction: column;
   width: 100vw;
   margin: 0;
+  font-family: $police_secondaire;
 }
 
 a{
@@ -68,13 +66,12 @@ header {
     height: 300px;
 
     .heading_explore {
-      font-family: 'Shrikhand-Regular';
-      font-size: 2rem;
-      text-align: center;
+      font-family: $police_secondaire;
+      font-size: 1.5rem;      text-align: center;
       padding: 15px 15px 0 15px;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-family: $police_secondaire;
       text-align: center;
       margin: 0 5%;
@@ -140,7 +137,22 @@ header {
   }
 }
 
+#restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgb(170, 170, 170);
+  .card__1 {
+    background: #fff;
+    width: 335px;
+    height: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
+     
+  }
 
+
+}
 
 
 
