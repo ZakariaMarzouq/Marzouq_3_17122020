@@ -1,44 +1,128 @@
 @font-face {
-    font-family: 'Shrikand-Regular';
-    src:url('Shrikhand-Regular.tff') format(tff);
+    font-family: 'Shrikhand-Regular';
+    src:url('/fonts/Shrikhand-Regular.ttf') format('truetype');
+    src: url(/fonts/);
 }
 
 @font-face{ 
-	font-family: 'MyWebFont';
-	src: url('WebFont.eot');
-	src: url('WebFont.eot?iefix') format('eot'),
-	     url('WebFont.woff') format('woff'),
-	     url('WebFont.ttf') format('truetype'),
-	     url('WebFont.svg#webfont') format('svg');
+	font-family: 'ROBOT';
+	src: url('/fonts/web\ fonts/ROBOT');
+	src: url('/fonts/web\ fonts/ROBOT') format('eot'),
+	     url('/fonts/web\ fonts/ROBOT') format('woff'),
+	     url('/fonts/web\ fonts/ROBOT') format('truetype'),
+	     url('/fonts/web\ fonts/ROBOT') format('svg');
 }
 
+$police_primaire:'Shrikhand';
+$police_secondaire :'ROBOT';
+$color_primaire: #9356DC;
+$color_secondaire:#FF79DA;
+$color_tertiaire:#99E2D0;
+
 body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0;
 }
 
 header {
-    .logo {
-        
-        font-family: 'Shrikhand-Regular', sans-serif;
-        text-align: center;
-        height: 60px;
-        
-    }
-}
-
-input {
-    background-color:#fff;
-    width: 100vw;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $police_primaire;
+    text-align: center;
+    height: 65px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ico_maps {
+    width: 2rem;
     height: 2rem;
+  }
+  .zone_rech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/ico_maps.png);
+    background:rgb(234, 234, 234);
+    font-size: 1.1rem;
+    padding: 1rem 0 1rem 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .section_explore {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgb(246, 246, 246);
+    height: 300px;
 
+    .heading_explore {
+      font-family: 'Shrikhand-Regular';
+      font-size: 2rem;
+      text-align: center;
+      padding: 15px 15px 0 15px;
+    }
+    p {
+      font-size: 1.3rem;
+      font-family: $police_secondaire;
+      text-align: center;
+      margin: 0 5%;
+    }
+    .btn_explore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 50px;
+      border: none;
+      border-radius: 100px;
+      background-color:#FF79DA;
+      color: white;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+  }
 }
 
-.section_explore {
-    font-family: ROBOT;
+.filtres {
+  display: flex;
+  flex-direction: column;
+  h2{
+    margin-left: 20px;
+  }
+
+  .cat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 20px;
+    width: 90%;
+    height: 75px;
+      .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: $color_primaire;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        margin-left: -5%;
+      }
+  }
+
+  .number {
+
+  }
+
+
+
 }
 
 

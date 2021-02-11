@@ -1,11 +1,12 @@
 @font-face {
-  font-family: "Shrikand-Regular";
-  src: url("Shrikhand-Regular.tff") format(tff);
+  font-family: "Shrikhand-Regular";
+  src: url("/fonts/Shrikhand-Regular.ttf") format("truetype");
+  src: url(/fonts/);
 }
 @font-face {
-  font-family: "MyWebFont";
-  src: url("WebFont.eot");
-  src: url("WebFont.eot?iefix") format("eot"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
+  font-family: "ROBOT";
+  src: url("/fonts/web fonts/ROBOT");
+  src: url("/fonts/web fonts/ROBOT") format("eot"), url("/fonts/web fonts/ROBOT") format("woff"), url("/fonts/web fonts/ROBOT") format("truetype"), url("/fonts/web fonts/ROBOT") format("svg");
 }
 body {
   display: flex;
@@ -16,19 +17,90 @@ body {
 }
 
 header .logo {
-  font-family: "Shrikhand-Regular", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand";
   text-align: center;
-  height: 60px;
+  height: 65px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-input {
-  background-color: #fff;
-  width: 100vw;
+header .ico_maps {
+  width: 2rem;
   height: 2rem;
 }
+header .zone_rech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/ico_maps.png);
+  background: #eaeaea;
+  font-size: 1.1rem;
+  padding: 1rem 0 1rem 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header .section_explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+  height: 300px;
+}
+header .section_explore .heading_explore {
+  font-family: "Shrikhand-Regular";
+  font-size: 2rem;
+  text-align: center;
+  padding: 15px 15px 0 15px;
+}
+header .section_explore p {
+  font-size: 1.3rem;
+  font-family: "ROBOT";
+  text-align: center;
+  margin: 0 5%;
+}
+header .section_explore .btn_explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  background-color: #FF79DA;
+  color: white;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
 
-.section_explore {
-  font-family: ROBOT;
+.filtres {
+  display: flex;
+  flex-direction: column;
+}
+.filtres h2 {
+  margin-left: 20px;
+}
+.filtres .cat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 90%;
+  height: 75px;
+}
+.filtres .cat .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #9356DC;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  margin-left: -5%;
 }
 
 /*# sourceMappingURL=style.css.map */
