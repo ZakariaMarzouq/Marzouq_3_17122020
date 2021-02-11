@@ -35,6 +35,7 @@ header .zone_rech {
   justify-content: center;
   align-items: center;
   background-image: url(/ico_maps.png);
+  box-shadow: 1px 1px 8px #aaaaaa;
   background: #eaeaea;
   font-size: 1.1rem;
   padding: 1rem 0 1rem 0;
@@ -69,6 +70,7 @@ header .section_explore .btn_explore {
   border: none;
   border-radius: 100px;
   background-color: #FF79DA;
+  box-shadow: 1px 3px 8px #aaaaaa;
   color: white;
   font-size: 1rem;
   margin-top: 1.5rem;
@@ -80,15 +82,20 @@ header .section_explore .btn_explore {
 }
 .filtres h2 {
   margin-left: 20px;
+  padding-top: 30px;
 }
 .filtres .cat {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid;
   border-radius: 20px;
+  background: #f6f6f6;
+  box-shadow: 1px 3px 8px #aaaaaa;
+  font-size: 1rem;
+  font-weight: bold;
   width: 90%;
   height: 75px;
+  margin-bottom: 25px;
 }
 .filtres .cat .number {
   display: flex;

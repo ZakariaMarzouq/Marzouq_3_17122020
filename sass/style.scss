@@ -18,6 +18,7 @@ $police_secondaire :'ROBOT';
 $color_primaire: #9356DC;
 $color_secondaire:#FF79DA;
 $color_tertiaire:#99E2D0;
+$shadow: 1px 3px 8px rgb(170, 170, 170);
 
 body {
   display: flex;
@@ -37,6 +38,7 @@ header {
     height: 65px;
     margin-top: 0;
     margin-bottom: 0;
+    
   }
   .ico_maps {
     width: 2rem;
@@ -47,6 +49,7 @@ header {
     justify-content: center;
     align-items: center;
     background-image: url(/ico_maps.png);
+    box-shadow: 1px 1px 8px rgb(170, 170, 170);
     background:rgb(234, 234, 234);
     font-size: 1.1rem;
     padding: 1rem 0 1rem 0;
@@ -81,6 +84,7 @@ header {
       border: none;
       border-radius: 100px;
       background-color:#FF79DA;
+      box-shadow: $shadow;
       color: white;
       font-size: 1rem;
       margin-top: 1.5rem;
@@ -93,16 +97,21 @@ header {
   flex-direction: column;
   h2{
     margin-left: 20px;
+    padding-top: 30px;
   }
 
   .cat {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid;
     border-radius: 20px;
+    background: rgb(246, 246, 246);
+    box-shadow: $shadow;
+    font-size: 1rem;
+    font-weight: bold;
     width: 90%;
     height: 75px;
+    margin-bottom: 25px;
       .number {
         display: flex;
         align-items: center;
