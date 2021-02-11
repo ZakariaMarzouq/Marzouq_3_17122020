@@ -28,6 +28,10 @@ body {
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 header {
   .logo {
     display: flex;
@@ -101,6 +105,7 @@ header {
   }
 
   .cat {
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -112,6 +117,7 @@ header {
     width: 90%;
     height: 75px;
     margin-bottom: 25px;
+    color: #000;
       .number {
         display: flex;
         align-items: center;
@@ -124,14 +130,14 @@ header {
         margin-right: 20px;
         margin-left: -5%;
       }
+
+      .ico_filtres {
+        width: 25px;
+        height: 25px;
+        color:$color_primaire;
+        margin-right: 15px;
+      }
   }
-
-  .number {
-
-  }
-
-
-
 }
 
 
