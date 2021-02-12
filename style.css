@@ -123,11 +123,10 @@ header .section_explore .btn_explore {
   margin-right: 20px;
   margin-left: -5%;
 }
-.filtres .cat .ico_filtres {
-  width: 25px;
-  height: 25px;
-  color: #9356DC;
-  margin-right: 15px;
+.filtres .cat .fa-mobile-alt, .filtres .cat .fa-list-ul, .filtres .cat .fa-store {
+  color: gray;
+  padding-right: 25px;
+  font-size: 1.2rem;
 }
 
 /* SECTION RESTAURANTS */
@@ -176,12 +175,11 @@ header .section_explore .btn_explore {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 #restaurant .info_card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 #restaurant .heading_card {
   display: flex;
@@ -196,10 +194,12 @@ header .section_explore .btn_explore {
 #restaurant .heading_card p {
   margin-top: 5px;
 }
-#restaurant img {
-  width: 40px;
-  height: 40px;
-  margin: -8px 20px 10px 0;
+#restaurant .fa-heart {
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  color: #000;
+  background: "Shrikhand";
 }
 
 footer {
@@ -207,7 +207,7 @@ footer {
   background: #353535;
 }
 footer h1 {
-  padding-left: 20px;
+  padding: 20px 0 0 20px;
   font-family: "Shrikhand";
   color: #FFF;
   font-size: 1.3rem;
@@ -218,10 +218,13 @@ footer ul {
   padding-left: 20px;
   color: #f6f6f6;
 }
-footer ul img {
-  width: 20px;
-  height: 20px;
-  color: #f6f6f6;
+footer ul .fa-utensils {
+  font-size: 0.8rem;
+  padding-right: 13px;
+}
+footer ul .fa-hands-helping {
+  font-size: 0.8rem;
+  padding-right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

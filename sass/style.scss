@@ -131,11 +131,10 @@ header {
         margin-right: 20px;
         margin-left: -5%;
       }
-      .ico_filtres {
-        width: 25px;
-        height: 25px;
-        color:$color_primaire;
-        margin-right: 15px;
+      .fa-mobile-alt, .fa-list-ul, .fa-store {
+        color:gray;
+        padding-right: 25px;
+        font-size: 1.2rem;
       }
   }
 }
@@ -185,12 +184,11 @@ header {
       object-fit: cover;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
     }
     .info_card {
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
     .heading_card {
       display: flex;
@@ -205,10 +203,13 @@ header {
           margin-top: 5px;
         }
     }
-    img {
-      width: 40px;
-      height: 40px;
-      margin: -8px 20px 10px 0;
+    .fa-heart {
+      font-size: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 0.5rem;
+      color: #000;
+      background: $police_primaire;
+      
     }
 }
 
@@ -216,7 +217,7 @@ footer {
   height: 250px;
   background: rgb(53, 53 , 53);
   h1 {
-    padding-left: 20px;
+    padding: 20px 0 0 20px;
     font-family: $police_primaire;
     color: #FFF;
     font-size: 1.3rem;
@@ -226,10 +227,13 @@ footer {
     line-height: 30px;
     padding-left: 20px;
     color: rgb(246, 246, 246);
-    img {
-      width: 20px;
-      height: 20px;
-      color: rgb(246, 246, 246);
+    .fa-utensils,  {
+      font-size: 0.8rem;
+      padding-right: 13px;
+    }
+    .fa-hands-helping {
+      font-size: 0.8rem;
+      padding-right: 8px;
     }
   }
 }
