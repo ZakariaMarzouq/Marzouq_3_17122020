@@ -121,8 +121,11 @@ header .section_explore .btn::after {
   margin-left: 20px;
   padding-top: 30px;
 }
-.filtres a:hover {
-  color: #9356DC;
+.filtres .filtres_cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
 }
 .filtres .cat {
   text-decoration: none;
@@ -134,7 +137,7 @@ header .section_explore .btn::after {
   box-shadow: 1px 3px 8px #eeeeee;
   font-size: 1rem;
   font-weight: bold;
-  width: 300px;
+  width: 320px;
   height: 75px;
   margin-bottom: 25px;
   color: #000;
@@ -147,12 +150,14 @@ header .section_explore .btn::after {
   align-items: center;
   justify-content: center;
   color: #fff;
+  font-size: 0.6rem;
+  font-weight: 100;
   background: #9356DC;
   border-radius: 100%;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin-right: 20px;
-  margin-left: -5%;
+  margin-left: -3%;
 }
 .filtres .cat .fa-mobile-alt, .filtres .cat .fa-list-ul, .filtres .cat .fa-store {
   color: #7e7e7e;
