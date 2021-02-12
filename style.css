@@ -46,7 +46,7 @@ header .zone_rech {
   justify-content: center;
   align-items: center;
   background-image: url(/ico_maps.png);
-  box-shadow: 1px 1px 8px #aaaaaa;
+  box-shadow: 1px 1px 8px #cecece;
   background: #eaeaea;
   font-size: 1.1rem;
   padding: 1rem 0 1rem 0;
@@ -81,7 +81,7 @@ header .section_explore .btn_explore {
   border: none;
   border-radius: 100px;
   background-color: #FF79DA;
-  box-shadow: 1px 3px 8px #aaaaaa;
+  box-shadow: 1px 3px 8px #eeeeee;
   color: white;
   font-size: 1rem;
   margin-top: 2rem;
@@ -96,6 +96,9 @@ header .section_explore .btn_explore {
   margin-left: 20px;
   padding-top: 30px;
 }
+.filtres a:hover {
+  color: #9356DC;
+}
 .filtres .cat {
   text-decoration: none;
   display: flex;
@@ -103,13 +106,16 @@ header .section_explore .btn_explore {
   align-items: center;
   border-radius: 20px;
   background: #f6f6f6;
-  box-shadow: 1px 3px 8px #aaaaaa;
+  box-shadow: 1px 3px 8px #eeeeee;
   font-size: 1rem;
   font-weight: bold;
   width: 300px;
   height: 75px;
   margin-bottom: 25px;
   color: #000;
+}
+.filtres .cat:hover {
+  background-color: #f5edff;
 }
 .filtres .cat .number {
   display: flex;
@@ -124,9 +130,12 @@ header .section_explore .btn_explore {
   margin-left: -5%;
 }
 .filtres .cat .fa-mobile-alt, .filtres .cat .fa-list-ul, .filtres .cat .fa-store {
-  color: gray;
+  color: #7e7e7e;
   padding-right: 25px;
   font-size: 1.2rem;
+}
+.filtres .cat .fa-mobile-alt:hover, .filtres .cat .fa-list-ul:hover, .filtres .cat .fa-store:hover {
+  color: #9356DC;
 }
 
 /* SECTION RESTAURANTS */
@@ -202,6 +211,7 @@ header .section_explore .btn_explore {
   background: "Shrikhand";
 }
 
+/* FOOTER */
 footer {
   height: 250px;
   background: #353535;
@@ -216,7 +226,7 @@ footer ul {
   font-size: 1.2rem;
   line-height: 30px;
   padding-left: 20px;
-  color: #f6f6f6;
+  color: #FFF;
 }
 footer ul .fa-utensils {
   font-size: 0.8rem;
@@ -225,6 +235,9 @@ footer ul .fa-utensils {
 footer ul .fa-hands-helping {
   font-size: 0.8rem;
   padding-right: 8px;
+}
+footer ul a {
+  color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */

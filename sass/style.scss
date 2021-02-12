@@ -15,7 +15,7 @@ $police_secondaire :'ROBOTO';
 $color_primaire: #9356DC;
 $color_secondaire:#FF79DA;
 $color_tertiaire:#99E2D0;
-$shadow: 1px 3px 8px rgb(170, 170, 170);
+$shadow: 1px 3px 8px rgb(238, 238, 238);
 
 /*General*/
 body {
@@ -35,7 +35,6 @@ li {
 }
 
 /* SECTION HEADER */
-
 header {
   .logo {
     display: flex;
@@ -56,7 +55,7 @@ header {
     justify-content: center;
     align-items: center;
     background-image: url(/ico_maps.png);
-    box-shadow: 1px 1px 8px rgb(170, 170, 170);
+    box-shadow: 1px 1px 8px rgb(206, 206, 206);
     background:rgb(234, 234, 234);
     font-size: 1.1rem;
     padding: 1rem 0 1rem 0;
@@ -105,6 +104,9 @@ header {
     margin-left: 20px;
     padding-top: 30px;
   }
+  a:hover {
+    color: $color_primaire;
+  }
   .cat {
     text-decoration: none;
     display: flex;
@@ -119,22 +121,28 @@ header {
     height: 75px;
     margin-bottom: 25px;
     color: #000;
-      .number {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        background: $color_primaire;
-        border-radius: 100%;
-        width: 30px;
-        height: 30px;
-        margin-right: 20px;
-        margin-left: -5%;
+    &:hover {
+      background-color: rgb(245, 237, 255);
+    }
+    .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: $color_primaire;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      margin-left: -5%;
       }
       .fa-mobile-alt, .fa-list-ul, .fa-store {
-        color:gray;
+        color: rgb(126, 126, 126);
         padding-right: 25px;
         font-size: 1.2rem;
+        &:hover {
+          color: $color_primaire;
+        }
       }
   }
 }
@@ -212,7 +220,7 @@ header {
       
     }
 }
-
+/* FOOTER */
 footer {
   height: 250px;
   background: rgb(53, 53 , 53);
@@ -226,7 +234,7 @@ footer {
     font-size: 1.2rem;
     line-height: 30px;
     padding-left: 20px;
-    color: rgb(246, 246, 246);
+    color:#FFF;
     .fa-utensils,  {
       font-size: 0.8rem;
       padding-right: 13px;
@@ -234,6 +242,9 @@ footer {
     .fa-hands-helping {
       font-size: 0.8rem;
       padding-right: 8px;
+    }
+    a {
+      color: #FFF;
     }
   }
 }
