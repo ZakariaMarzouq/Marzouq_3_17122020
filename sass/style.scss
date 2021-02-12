@@ -30,6 +30,10 @@ a{
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* SECTION HEADER */
 
 header {
@@ -141,17 +145,15 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: rgb(170, 170, 170);
+  background: rgb(246, 246, 246);
     h1 {
-      margin-left: 20px;
+      margin: 45px 0 20px 20px;
     }
-
     .resultat_rest {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
     .card {
       width: 335px;
       height: 250px;
@@ -166,6 +168,7 @@ header {
           background: $color_tertiaire;
           color: rgb(0, 135, 102);
           font-size: 13px;
+          font-weight: bold;
           width: 80px;
           height: 30px;
           display: flex;
@@ -207,6 +210,17 @@ header {
       height: 40px;
       margin: -8px 20px 10px 0;
     }
+}
+
+footer {
+  background: rgb(53, 53 , 53);
+  h1 {
+    font-family: $police_primaire;
+    color: #FFF;
+  }
+  ul {
+    color: rgb(246, 246, 246);
+  }
 }
 
 

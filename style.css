@@ -1,3 +1,4 @@
+/* Polices */
 @font-face {
   font-family: "Shrikhand-Regular";
   src: url("/fonts/Shrikhand-Regular.ttf") format("truetype");
@@ -6,6 +7,8 @@
   font-family: "ROBOTO";
   src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
 }
+/* Variable */
+/*General*/
 body {
   display: flex;
   justify-content: center;
@@ -17,6 +20,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* SECTION HEADER */
@@ -99,7 +106,7 @@ header .section_explore .btn_explore {
   box-shadow: 1px 3px 8px #aaaaaa;
   font-size: 1rem;
   font-weight: bold;
-  width: 90%;
+  width: 300px;
   height: 75px;
   margin-bottom: 25px;
   color: #000;
@@ -128,10 +135,10 @@ header .section_explore .btn_explore {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: #aaaaaa;
+  background: #f6f6f6;
 }
 #restaurant h1 {
-  margin-left: 20px;
+  margin: 45px 0 20px 20px;
 }
 #restaurant .resultat_rest {
   display: flex;
@@ -146,7 +153,22 @@ header .section_explore .btn_explore {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+}
+#restaurant .card .class {
+  position: absolute;
+  background: #99E2D0;
+  color: #008766;
+  font-size: 13px;
+  font-weight: bold;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 240px;
+  margin-bottom: 215px;
+  border-radius: 3px;
 }
 #restaurant .img_card {
   width: 100%;
@@ -154,11 +176,41 @@ header .section_explore .btn_explore {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  padding-bottom: 5px;
 }
-#restaurant info_card {
+#restaurant .info_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#restaurant .heading_card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  margin-left: 12px;
+  color: #000;
+}
+#restaurant .heading_card h3 {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+#restaurant .heading_card p {
+  margin-top: 5px;
+}
+#restaurant img {
+  width: 40px;
+  height: 40px;
+  margin: -8px 20px 10px 0;
+}
+
+footer {
+  background: #353535;
+}
+footer h1 {
+  font-family: "Shrikhand";
+  color: #FFF;
+}
+footer ul {
+  color: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */
