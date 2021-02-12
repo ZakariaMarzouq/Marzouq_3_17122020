@@ -36,22 +36,29 @@ header .logo {
   height: 65px;
   margin-top: 0;
   margin-bottom: 0;
+  background: #FFF;
 }
-header .ico_maps {
-  width: 2rem;
-  height: 2rem;
-}
-header .zone_rech {
+header .maps {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-image: url(/ico_maps.png);
-  box-shadow: 1px 1px 8px #cecece;
+  justify-content: end;
+}
+header .maps .fa-map-marker-alt {
+  position: absolute;
+  padding-left: 100px;
+}
+header .maps input {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0px -2px 8px #cecece;
   background: #eaeaea;
-  font-size: 1.1rem;
-  padding: 1rem 0 1rem 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  border: none;
+}
+header .maps input::placeholder {
+  color: #000;
 }
 header .section_explore {
   display: flex;
@@ -72,7 +79,7 @@ header .section_explore p {
   text-align: center;
   margin: 0 5%;
 }
-header .section_explore .btn_explore {
+header .section_explore .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,10 +88,28 @@ header .section_explore .btn_explore {
   border: none;
   border-radius: 100px;
   background-color: #FF79DA;
-  box-shadow: 1px 3px 8px #eeeeee;
   color: white;
   font-size: 1rem;
   margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+header .section_explore .btn:hover::after {
+  opacity: 0;
+}
+header .section_explore .btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, #ff93e1 0%, #8b50b0 100%);
+  opacity: 0.7;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 /* SECTION FILTRES */

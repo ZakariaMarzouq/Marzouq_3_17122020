@@ -15,6 +15,7 @@ $police_secondaire :'ROBOTO';
 $color_primaire: #9356DC;
 $color_secondaire:#FF79DA;
 $color_tertiaire:#99E2D0;
+$clr-btn: #15DEA5;
 $shadow: 1px 3px 8px rgb(238, 238, 238);
 
 /*General*/
@@ -45,23 +46,32 @@ header {
     height: 65px;
     margin-top: 0;
     margin-bottom: 0;
+    background: #FFF;
   }
-  .ico_maps {
-    width: 2rem;
-    height: 2rem;
-  }
-  .zone_rech {
+
+  .maps {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-image: url(/ico_maps.png);
-    box-shadow: 1px 1px 8px rgb(206, 206, 206);
-    background:rgb(234, 234, 234);
-    font-size: 1.1rem;
-    padding: 1rem 0 1rem 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    justify-content: end;
+    .fa-map-marker-alt {
+      position:absolute;
+      padding-left: 100px;
+    }
+    input {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: bold;
+      box-shadow: 0px -2px 8px rgb(206, 206, 206);
+      background:rgb(234, 234, 234);
+      border: none;
+      &::placeholder {
+        color:#000;
+      }
+    }
   }
+
   .section_explore {   
     display: flex;
     flex-direction: column;
@@ -79,7 +89,7 @@ header {
       text-align: center;
       margin: 0 5%;
     }
-    .btn_explore {
+    .btn {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -87,11 +97,31 @@ header {
       height: 50px;
       border: none;
       border-radius: 100px;
-      background-color:#FF79DA;
-      box-shadow: $shadow;
+      background-color: $color_secondaire;
       color: white;
       font-size: 1rem;
       margin-top: 2rem;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        &::after {
+            opacity: 0;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        border-radius: 100px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 100%);
+        opacity: 0.7;
+        z-index: -1;
+        transition: opacity 250ms;
+      }
     }
   }
 }
