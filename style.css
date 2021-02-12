@@ -203,13 +203,24 @@ header .section_explore .btn_explore {
 }
 
 footer {
+  height: 250px;
   background: #353535;
 }
 footer h1 {
+  padding-left: 20px;
   font-family: "Shrikhand";
   color: #FFF;
+  font-size: 1.3rem;
 }
 footer ul {
+  font-size: 1.2rem;
+  line-height: 30px;
+  padding-left: 20px;
+  color: #f6f6f6;
+}
+footer ul img {
+  width: 20px;
+  height: 20px;
   color: #f6f6f6;
 }
 
