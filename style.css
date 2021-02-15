@@ -214,7 +214,7 @@ header .section_explore .btn::after {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 #restaurant .info_card {
   display: flex;
