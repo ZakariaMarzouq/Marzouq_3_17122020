@@ -189,22 +189,4 @@ footer ul a {
   color: #FFF;
 }
 
-/* test*/
-.btn {
-  margin: 20px;
-  background-color: rgba(1, 28, 55, 0);
-  border: 4px solid #9925;
-  border-radius: 10rem;
-  cursor: pointer;
-  font-size: 3rem;
-  overflow: hidden;
-  padding: 1.85rem 3rem;
-  position: relative;
-  transition: transform 450ms, background-color 300ms 150ms ease-out;
-}
-.btn:hover {
-  transform: scale(1.13);
-  background-color: #011c37;
-}
-
 /*# sourceMappingURL=style-page1.css.map */
