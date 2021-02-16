@@ -236,36 +236,29 @@ header {
     .info_card {
       display: flex;
       justify-content: space-between;
-    }
-    .heading_card {
-      display: flex;
-      flex-direction: column;
-      margin-left: 12px;
-      color: #000;
-        h3 {
-          margin-top: 0px;
-          margin-bottom: 0;
-        }
-        p {
-          margin-top: 5px;
-        }
+      margin: 0px 12px;
+      .heading_card {
+        display: flex;
+        flex-direction: column;
+        color: #000;
+          h3 {
+            margin-top: 0px;
+            margin-bottom: 0;
+          }
+          p {
+            margin-top: 5px;
+          }
+      }
+      .btn_heart {
+        padding-right: 10px;
+        font-size: 1.7rem;
+        color:#000;
+        font-weight: lighter;
+      }
     }
 }
 
-.btn_heart {
-  .btn {
-    position: absolute;
-    margin: 195px 0px 0px 115px;
-    font-size: 1.5rem;
-    color: #000;
-    border: none;
-    background-color: #fff;
-    cursor: pointer;
-    &:hover {
-      background: $color_tertiaire;
-    }
-  }
-}
+
 
 /* FOOTER */
 footer {
@@ -294,4 +287,94 @@ footer {
       color: #FFF;
     }
   }
+}
+
+
+@media screen and (max-width: 320px) {
+  header {
+    .maps {
+      .fa-map-marker-alt {
+        padding-left: 80px;
+      }
+    }
+  }
+
+  .filtres_cat {
+    .cat {
+      width: 280px;
+    }
+  }
+
+  #restaurant {
+    .resultat_rest {
+      .btn_heart {
+        margin-right: 30px;
+      }
+      .card {
+        width: 300px;
+      }
+      .class {
+        margin-left: 205px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  header {
+    .maps {
+      .fa-map-marker-alt {
+        padding-left: 30%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    .maps {
+      .fa-map-marker-alt {
+        padding-left: 40%;
+      }
+    }
+    .section_explore {
+      height: 250px;
+    }
+  }
+  
+  .filtres {
+    .filtres_cat {
+      flex-direction: row;
+      justify-content: space-around;
+        .cat {
+          width: 220px;
+          height: 60px;
+          font-size: 0.8rem;
+            .number {
+              border-radius: 20px;
+              width: 24px; height: 24px;
+              font-size: 12px;
+              margin-right: 15px;
+            }
+            .fa-mobile-alt, .fa-list-ul, .fa-store {
+              padding-right: 15px;
+            }
+        }
+    }
+  }
+
+  #restaurant {
+    .resultat_rest {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .card {
+        width: 330px;
+      }
+      .class {
+        margin-left: 205px;
+      }
+    }
+  }
+  
 }
