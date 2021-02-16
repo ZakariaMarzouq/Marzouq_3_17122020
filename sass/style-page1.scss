@@ -1,0 +1,233 @@
+/* Polices */
+@font-face {
+  font-family: 'Shrikhand-Regular';
+  src:url('/fonts/Shrikhand-Regular.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'ROBOTO';
+	src: url('/Fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+/* Variable */
+$police_primaire:'Shrikhand';
+$police_secondaire :'ROBOTO';
+$color_primaire: #9356DC;
+$color_secondaire:#FF79DA;
+$color_tertiaire:#99E2D0;
+$clr-btn: #15DEA5;
+$color_fond: rgb(246, 246, 246);
+$shadow: 1px 3px 8px rgb(187, 187, 187);
+
+/* Generale */
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0;
+  font-family: $police_secondaire;
+}
+
+h1{
+  font-family: $police_primaire;
+}
+
+a{
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  .btn {
+    background-color: white;
+    border: none;
+    .fa-arrow-left {
+      font-size: 1.2rem;
+      color: #000;
+    }
+  }
+  h1 {
+    padding: 0 85 0 60;
+  }
+}
+
+/* SECTION MENU-1 */
+
+#menu1 {
+  display: flex;
+  flex-direction: column;
+  background-color: $color_fond;
+  height: 1500px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -50px;
+  padding: 20px;
+    .heading_menu {
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        padding-right: 85px;
+        font-size: 1.65rem;
+      }
+      .btn {
+        border:none;
+        background-color: $color_fond;
+        padding-right: 15px;
+        .fa-heart {
+          font-size: 25px;
+        }
+      }
+    }
+
+  .card_menu {
+    margin-bottom: 40px;
+    .heading {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: lighter;
+      margin-bottom: 2;      
+    }
+    .border {
+      width: 45px;
+      height: 4px;
+      background: $color_tertiaire;
+    }
+    .card {
+      height: 60px;
+      background: white;
+      border-radius: 15px;
+      padding: 5px;
+      margin-top: 20px;
+      box-shadow: $shadow;
+      transition: transform 400ms;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+        &:hover {
+          width: 150px;
+          background-color: $clr-btn;
+          background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 100%);
+          opacity: 0.7;
+          transition: opacity 250ms;
+        }  
+      .heading_card {
+        font-size: 1.1rem;
+        margin: 10 0 -8 10;
+      }
+      .info_card {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10 0 10;
+          p {
+             font-size: 14px;
+          }
+          .price {
+            font-weight: bold;
+          }
+        }
+    }
+  }  
+}
+
+.btn_valid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 70px;
+  margin: 5px 25% 0 18%;
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  background-color: $color_secondaire;
+  color: white;
+  font-size: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    &::after {
+        opacity: 0;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 100%);
+    opacity: 0.7;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+}
+/* FOOTER */
+
+footer {
+  height: 250px;
+  background: rgb(53, 53 , 53);
+  h1 {
+    padding: 20px 0 0 20px;
+    font-family: $police_primaire;
+    color: #FFF;
+    font-size: 1.3rem;
+  }
+  ul {
+    font-size: 1.2rem;
+    line-height: 30px;
+    padding-left: 20px;
+    color:#FFF;
+    .fa-utensils {
+      font-size: 0.8rem;
+      padding-right: 13px;
+    }
+    .fa-hands-helping {
+      font-size: 0.8rem;
+      padding-right: 8px;
+    }
+    a {
+      color: #FFF;
+    }
+  }
+}
+
+
+/* test*/
+
+$cd-btn-start: rgba(1, 28, 55, 0);
+$cd-btn-end: rgba(1, 28, 55, 1);
+$clr-btn: #15DEA5;
+$cd-btn:#9925;
+
+.btn {
+  margin: 20px;
+  background-color: $cd-btn-start;
+  border: 4px solid $cd-btn;
+  border-radius: 10rem;
+  cursor: pointer;
+  font-size: 3rem;
+  overflow: hidden;
+  padding: 1.85rem 3rem;
+  position: relative;
+  transition: transform 450ms, background-color 300ms 150ms ease-out;
+  &:hover {
+      transform: scale(1.13);
+      background-color: $cd-btn-end;
+  }
+}
+
+
