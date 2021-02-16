@@ -45,10 +45,11 @@ li {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 65px;
-  .btn {
+  .btn_return {
+    margin-left: 30px;
     background-color: white;
     border: none;
     .fa-arrow-left {
@@ -57,7 +58,7 @@ li {
     }
   }
   h1 {
-    padding: 0 85 0 60;
+    margin-right: 100px;
   }
 }
 
@@ -67,7 +68,7 @@ li {
   display: flex;
   flex-direction: column;
   background-color: $color_fond;
-  height: 1500px;
+  height: auto;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-top: -50px;
@@ -75,8 +76,8 @@ li {
     .heading_menu {
       display: flex;
       justify-content: space-between;
-      h1 {
-        padding-right: 85px;
+      h2 {
+        font-family: $police_primaire;
         font-size: 1.65rem;
       }
       .btn {
@@ -114,20 +115,19 @@ li {
       position: relative;
       z-index: 1;
         &:hover {
-          width: 150px;
           background-color: $clr-btn;
-          background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 100%);
+          background: radial-gradient(circle, lighten($clr-btn, 5) 0%, darken($clr-btn, 10) 100%);
           opacity: 0.7;
           transition: opacity 250ms;
         }  
       .heading_card {
         font-size: 1.1rem;
-        margin: 10 0 -8 10;
+        margin: 10px 0px -10px 10px;
       }
       .info_card {
         display: flex;
         justify-content: space-between;
-        margin: 0 10 0 10;
+        margin: 0px 10px;
           p {
              font-size: 14px;
           }
@@ -140,41 +140,47 @@ li {
 }
 
 .btn_valid {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 220px;
-  height: 70px;
-  margin: 5px 25% 0 18%;
-  text-align: center;
-  border: none;
-  border-radius: 100px;
-  background-color: $color_secondaire;
-  color: white;
-  font-size: 1rem;
-  margin-top: 2rem;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  &:hover {
+  .btn__valid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 70px;
+    text-align: center;
+    border: none;
+    border-radius: 100px;
+    background-color: $color_secondaire;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    &:hover {
+      &::after {
+          opacity: 0;
+      }
+    }
     &::after {
-        opacity: 0;
+      content: "";
+      position: absolute;
+      border-radius: 100px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 100%);
+      opacity: 0.7;
+      z-index: -1;
+      transition: opacity 250ms;
     }
   }
-  &::after {
-    content: "";
-    position: absolute;
-    border-radius: 100px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 100%);
-    opacity: 0.7;
-    z-index: -1;
-    transition: opacity 250ms;
-  }
+
 }
+
 /* FOOTER */
 
 footer {

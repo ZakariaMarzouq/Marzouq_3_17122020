@@ -33,20 +33,21 @@ li {
 /* HEADER */
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 65px;
 }
-.header .btn {
+.header .btn_return {
+  margin-left: 30px;
   background-color: white;
   border: none;
 }
-.header .btn .fa-arrow-left {
+.header .btn_return .fa-arrow-left {
   font-size: 1.2rem;
   color: #000;
 }
 .header h1 {
-  padding: 0 85 0 60;
+  margin-right: 100px;
 }
 
 /* SECTION MENU-1 */
@@ -54,7 +55,7 @@ li {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  height: 1500px;
+  height: auto;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-top: -50px;
@@ -64,8 +65,8 @@ li {
   display: flex;
   justify-content: space-between;
 }
-#menu1 .heading_menu h1 {
-  padding-right: 85px;
+#menu1 .heading_menu h2 {
+  font-family: "Shrikhand";
   font-size: 1.65rem;
 }
 #menu1 .heading_menu .btn {
@@ -103,20 +104,19 @@ li {
   z-index: 1;
 }
 #menu1 .card_menu .card:hover {
-  width: 150px;
   background-color: #15DEA5;
-  background: radial-gradient(circle, #ff93e1 0%, #8b50b0 100%);
+  background: radial-gradient(circle, #22eab1 0%, #11af82 100%);
   opacity: 0.7;
   transition: opacity 250ms;
 }
 #menu1 .card_menu .card .heading_card {
   font-size: 1.1rem;
-  margin: 10 0 -8 10;
+  margin: 10px 0px -10px 10px;
 }
 #menu1 .card_menu .card .info_card {
   display: flex;
   justify-content: space-between;
-  margin: 0 10 0 10;
+  margin: 0px 10px;
 }
 #menu1 .card_menu .card .info_card p {
   font-size: 14px;
@@ -126,12 +126,16 @@ li {
 }
 
 .btn_valid {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.btn_valid .btn__valid {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 220px;
   height: 70px;
-  margin: 5px 25% 0 18%;
   text-align: center;
   border: none;
   border-radius: 100px;
@@ -143,10 +147,10 @@ li {
   position: relative;
   z-index: 1;
 }
-.btn_valid:hover::after {
+.btn_valid .btn__valid:hover::after {
   opacity: 0;
 }
-.btn_valid::after {
+.btn_valid .btn__valid::after {
   content: "";
   position: absolute;
   border-radius: 100px;
