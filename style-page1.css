@@ -73,6 +73,7 @@ li {
   border: none;
   background-color: #f6f6f6;
   padding-right: 15px;
+  cursor: pointer;
 }
 #menu1 .heading_menu .btn .fa-heart {
   font-size: 25px;

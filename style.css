@@ -208,8 +208,8 @@ header .section_explore .btn::after {
   justify-content: center;
   align-items: center;
   margin-left: 240px;
-  margin-bottom: 215px;
-  border-radius: 3px;
+  margin-bottom: 205px;
+  border-radius: 2px;
 }
 #restaurant .img_card {
   width: 100%;
@@ -239,11 +239,12 @@ header .section_explore .btn::after {
 
 .btn_heart .btn {
   position: absolute;
-  margin: 190px 0 0 90px;
+  margin: 195px 0px 0px 115px;
   font-size: 1.5rem;
   color: #000;
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
 .btn_heart .btn:hover {
   background: #99E2D0;
