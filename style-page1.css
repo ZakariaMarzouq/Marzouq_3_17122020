@@ -85,7 +85,7 @@ li {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: lighter;
-  margin-bottom: 2;
+  margin-bottom: 2px;
 }
 #menu1 .card_menu .border {
   width: 45px;
