@@ -128,9 +128,7 @@ header .section_explore .btn::after {
   padding-left: 0;
 }
 .filtres .cat {
-  text-decoration: none;
   display: flex;
-  flex-direction: row;
   align-items: center;
   border-radius: 20px;
   background: #f6f6f6;
@@ -140,6 +138,11 @@ header .section_explore .btn::after {
   width: 320px;
   height: 75px;
   margin-bottom: 25px;
+  color: #000;
+}
+.filtres .cat a {
+  display: flex;
+  align-items: center;
   color: #000;
 }
 .filtres .cat:hover {
@@ -175,7 +178,7 @@ header .section_explore .btn::after {
   width: 100%;
   background: #f6f6f6;
 }
-#restaurant h1 {
+#restaurant h2 {
   margin: 45px 0 20px 20px;
 }
 #restaurant .resultat_rest {
@@ -233,12 +236,14 @@ header .section_explore .btn::after {
 #restaurant .heading_card p {
   margin-top: 5px;
 }
-#restaurant .fa-heart {
+
+.btn_heart .btn {
+  position: absolute;
+  margin: 190px 0 0 90px;
   font-size: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
   color: #000;
-  background: "Shrikhand";
+  border: none;
+  background-color: #fff;
 }
 
 /* FOOTER */
