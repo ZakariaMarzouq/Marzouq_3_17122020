@@ -260,12 +260,11 @@ header {
     color: #000;
     border: none;
     background-color: #fff;
+    &:hover {
+      background: $color_tertiaire;
+    }
   }
 }
-
-
-
-
 
 /* FOOTER */
 footer {
@@ -295,6 +294,3 @@ footer {
     }
   }
 }
-
-
-

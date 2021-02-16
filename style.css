@@ -245,6 +245,9 @@ header .section_explore .btn::after {
   border: none;
   background-color: #fff;
 }
+.btn_heart .btn:hover {
+  background: #99E2D0;
+}
 
 /* FOOTER */
 footer {
