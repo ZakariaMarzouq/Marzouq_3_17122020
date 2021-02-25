@@ -33,21 +33,29 @@ li {
 /* HEADER */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 65px;
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 70px;
+  width: 90%;
 }
 .header .btn_return {
-  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 66px;
   background-color: white;
-  border: none;
 }
 .header .btn_return .fa-arrow-left {
   font-size: 1.2rem;
   color: #000;
 }
-.header h1 {
-  margin-right: 100px;
+.header .logo {
+  width: 80%;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* SECTION MENU */
@@ -139,7 +147,7 @@ li {
   text-overflow: ellipsis;
 }
 .btn_card .card_description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 100;
   margin-top: 4px;
 }

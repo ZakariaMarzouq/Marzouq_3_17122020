@@ -45,20 +45,28 @@ li {
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 65px;
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 70px;
+  width: 90%;
   .btn_return {
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%; 
+    height: 66px;
     background-color: white;
-    border: none;
     .fa-arrow-left {
       font-size: 1.2rem;
       color: #000;
     }
   }
-  h1 {
-    margin-right: 100px;
+  .logo {
+    width: 80%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -155,7 +163,7 @@ li {
     text-overflow: ellipsis;
   }
   .card_description {
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 100;
     margin-top: 4px;
   }
