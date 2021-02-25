@@ -47,14 +47,14 @@ li {
   display: flex;
   margin-right: 5%;
   margin-left: 5%;
-  height: 70px;
+  height: 65px;
   width: 90%;
   .btn_return {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20%; 
-    height: 66px;
+    height: 60px;
     background-color: white;
     .fa-arrow-left {
       font-size: 1.2rem;
@@ -63,7 +63,7 @@ li {
   }
   .logo {
     width: 80%;
-    height: 66px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +80,7 @@ li {
   height: auto;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  margin-top: -50px;
+  margin-top: -40px;
   padding: 10px;
   .heading_menu {
     display: flex;

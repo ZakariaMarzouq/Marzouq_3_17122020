@@ -219,7 +219,7 @@ header .section_explore .btn::after {
 }
 #restaurant .img_card {
   width: 100%;
-  height: 175px;
+  height: 176px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;

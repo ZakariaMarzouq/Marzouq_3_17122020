@@ -6,118 +6,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-page1.css">
     <script src="https://kit.fontawesome.com/b1d57f74b5.js" crossorigin="anonymous"></script>
-    <title>Ohmyfood!</title>
+    <title>Ohmyfood! - La palette du goût</title>
 </head>
 <body>
 
   <header>
     <div class="header">
-      <span class="btn_return"><a href="index.html" class="bouton"><i class="fas fa-arrow-left"></i></a></span>
-      <h1>ohmyfood</h1>
+      <div class="btn_return">
+        <a href="index.html" class="bouton"><i class="fas fa-arrow-left"></i></a>
+      </div>
+      <div class="logo"><h1>ohmyfood</h1></div>
     </div>
   </header>
   <img src="/Maquettes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût">
 
   <!--SECTION MENU-->
-  <section id="menu1"> 
+  <section id="menu"> 
     <div class="heading_menu">
-
       <h2>La palette du goût</h2>
       <button class="btn"><i class="far fa-heart"></i></button>
     </div>
 
-    <!--1ER PARTIE - ENTREE-->
+      <!--1ER PARTIE - ENTREE-->
 
-    <div class="card_menu">
-      <h2 class="heading">Entrées</h2>
+    <div class="card_menu card__menu__first__part">
+      <h3 class="heading">Entrées</h3>
       <div class="border"></div>
 
-      <div class="card">
-        <h3 class="heading_card">Fricassée d'escargot</h3>
-        <div class="info_card">
-          <div><p>Au piment d'Espelette </p></div>
-          <div><p class="price">25€</p></div>
+      <div class="container_card">
+        <div class="btn_card">
+          <div class="info_card">
+            <h4 class="card_title">Fricassée d'escargot</h4>
+            <p class="card_description">Au piment d'Espelette</p>
+          </div>
+          <div class="card_price">25€</div>
+        </div>
+        <div class="container_checked">          
+          <div class="box_check">
+            <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h3 class="heading_card">Foie gras de canard mi-cuit</h3>
-        <div class="info_card">
-          <div><p>Et ses copeaux de truffe noire</p></div>
-          <div><p class="price">35€</p></div>
+      <div class="container_card">
+        <div class="btn_card">
+          <div class="info_card">
+            <h4 class="card_title">Foie gras de canard mi-cuit</h4>
+            <p class="card_description">Et ses copeaux de truffe noire</p>
+          </div>
+          <div class="card_price">35€</div>
+        </div>
+        <div class="container_checked">          
+          <div class="box_check">
+            <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h3 class="heading_card">Oeuf au plat</h3>
-        <div class="info_card">
-          <div><p>Assaisonné à la truffe sur lit de caviar</p></div>
-          <div><p class="price">20€</p></div>
+      <div class="container_card">
+        <div class="btn_card">
+          <div class="info_card">
+            <h4 class="card_title">Oeuf au plat</h4>
+            <p class="card_description">Assaisonné à la truffe sur lit de caviar</p>
+          </div>
+          <div class="card_price">20€</div>
+        </div>
+        <div class="container_checked">          
+          <div class="box_check">
+            <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+          </div>
         </div>
       </div>
+
     </div>
 
       <!--2EME PARTIE - PLAT-->
 
-    <div class="card_menu">
-      <h2 class="heading">PLATS</h2>
-      <div class="border"></div>
-      
-      <div class="card">
-        <h3 class="heading_card">Filet de boeuf aux herbes</h3>
-        <div class="info_card">
-          <div><p>Accompagné de sa ribambelle de légumes</p></div>
-          <div><p class="price">40€</p></div>
+      <div class="card_menu card__menu__second__part">
+        <h3 class="heading">PLATS</h3>
+        <div class="border"></div>
+  
+        <div class="container_card">
+          <div class="btn_card">
+            <div class="info_card">
+              <h4 class="card_title">Filet de boeuf aux herbes</h4>
+              <p class="card_description">Accompagné de sa ribambelle de légumes</p>
+            </div>
+            <div class="card_price">40€</div>
+          </div>
+          <div class="container_checked">          
+            <div class="box_check">
+              <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+            </div>
+          </div>
         </div>
+  
+        <div class="container_card">
+          <div class="btn_card">
+            <div class="info_card">
+              <h4 class="card_title">Magret de canard</h4>
+              <p class="card_description">Et parmentier de pommes de terre</p>
+            </div>
+            <div class="card_price">35€</div>
+          </div>
+          <div class="container_checked">          
+            <div class="box_check">
+              <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container_card">
+          <div class="btn_card">
+            <div class="info_card">
+              <h4 class="card_title">Filet de turbot</h4>
+              <p class="card_description">Aux agrumes</p>
+            </div>
+            <div class="card_price">44€</div>
+          </div>
+          <div class="container_checked">          
+            <div class="box_check">
+              <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="card">
-        <h3 class="heading_card">Parmentier de queue de boeuf</h3>
-        <div class="info_card">
-          <div><p>À la truffe noire sur sa purée de panais</p></div>
-          <div><p class="price">35€</p></div>
+      <!--3EME PARTIES - DESSERT-->
+
+      <div class="card_menu card__menu__third__part">
+        <h3 class="heading">DESSERTS</h3>
+        <div class="border"></div>
+  
+        <div class="container_card">
+          <div class="btn_card">
+            <div class="info_card">
+              <h4 class="card_title">Paris-Brest</h4>
+              <p class="card_description">Revisité</p>
+            </div>
+            <div class="card_price">18€</div>
+          </div>
+          <div class="container_checked">          
+            <div class="box_check">
+              <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="card">
-        <h3 class="heading_card">Filet de turbot</h3>
-        <div class="info_card">
-          <div><p>Aux agrumes</p></div>
-          <div><p class="price">44€</p></div>
+  
+        <div class="container_card">
+          <div class="btn_card">
+            <div class="info_card">
+              <h4 class="card_title">Macaron au chocolat d'exception</h4>
+              <p class="card_description">Et glace à la vanille de Madagascar</p>
+            </div>
+            <div class="card_price">22€</div>
+          </div>
+          <div class="container_checked">          
+            <div class="box_check">
+              <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <!--3EME PARTIES - DESSERT-->
-
-    <div class="card_menu">
-      <h2 class="heading">DESSERTS</h2>
-      <div class="border"></div>
-
-      <div class="card">
-        <h3 class="heading_card">Paris-Brest</h3>
-        <div class="info_card">
-          <div><p>Revisité</p></div>
-          <div><p class="price">18€</p></div>
+  
+        <div class="container_card">
+          <div class="btn_card">
+            <div class="info_card">
+              <h4 class="card_title">Mousse au chocolat</h4>
+              <p class="card_description">Au piment d'Espelette et à la truffe noire</p>
+            </div>
+            <div class="card_price">23€</div>
+          </div>
+          <div class="container_checked">          
+            <div class="box_check">
+              <div class="ico_check"><i class="fas fa-check-circle"></i></div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="card">
-        <h3 class="heading_card">Macaron au chocolat d'exception</h3>
-        <div class="info_card">
-          <div><p>Et glace à la vanille de Madagascar</p></div>
-          <div><p class="price">22€</p></div>
-        </div>
       </div>
-
-      <div class="card">
-        <h3 class="heading_card">Mousse au chocolat</h3>
-        <div class="info_card">
-          <div><p>Au piment d'Espelette et à la truffe noire</p></div>
-          <div><p class="price">23€</p></div>
-        </div>
-      </div>
-    </div>
 
     <div class="btn_valid">
       <button class="btn__valid">
