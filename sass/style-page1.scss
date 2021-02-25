@@ -68,6 +68,7 @@ li {
   display: flex;
   flex-direction: column;
   background-color: $color_fond;
+  width:auto;
   height: auto;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -93,8 +94,9 @@ li {
 }  
 
 .card_menu {
+  margin-bottom: 20px;
   & .heading {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 8px;
     text-transform: uppercase;
   }
@@ -102,7 +104,10 @@ li {
     background: $clr-btn;
     width: 50px;
     height: 4px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+  & .heading, .border {
+    margin-left: 10px;
   }
 }
  
@@ -110,8 +115,8 @@ li {
 .container_card {
   display: flex;
   justify-content: space-between;
+  height: 80px;
   background-color: #fff;
-  padding: 1rem;
   border-radius: .75rem;
   margin: 0.5rem;
   box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
@@ -119,16 +124,11 @@ li {
   cursor: pointer;
   max-width: 100%;
   &:hover {
-    .card_title, .card_description {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
     .box_check {
       margin-left: 5rem;
       transform: scale(0);
       transition-duration: 650ms;
-      transform: translateX(-10vh);
+      transform: translateX(-64px);
     } 
     .ico_check {
       transform: rotate(-360deg);
@@ -136,12 +136,23 @@ li {
     }
   }
 }
-
 .btn_card {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+
+  .info_card {
+    overflow: hidden;
+  }
+
   .card_title, .card_description {
     margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .card_description {
     font-size: .8rem;
@@ -149,20 +160,22 @@ li {
     margin-top: 4px;
   }
 }
-  
+
 .container_checked {
   display: flex;
 }
-
 .card_price {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   align-content: flex-end;
+  font-weight: bold;
+  padding-top: 23px;
+  padding-left: 20px;
 }
-  
+
 .box_check {
   background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
+  //margin: -1rem -5.2rem -1rem 1rem;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 4rem;
@@ -170,11 +183,17 @@ li {
   align-items: center;
   justify-content: center;
   transition-duration: 450ms;
+  position: relative;
+  margin-right: -64px;
+
+
   .ico_check {
     color: #fff;
     font-size: 2rem;
   }
 }
+
+/* CALL TO ACTION */
 
 .btn_valid {
   margin-bottom: 50px;

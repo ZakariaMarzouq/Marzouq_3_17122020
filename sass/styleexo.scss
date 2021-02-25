@@ -50,8 +50,8 @@ $shadow: 1px 3px 8px rgb(187, 187, 187);
 .container_card {
   display: flex;
   justify-content: space-between;
+  height: 80px;
   background-color: #fff;
-  padding: 1rem;
   border-radius: .75rem;
   margin: 0.5rem;
   box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
@@ -59,16 +59,11 @@ $shadow: 1px 3px 8px rgb(187, 187, 187);
   cursor: pointer;
   max-width: 100%;
   &:hover {
-    .card_title, .card_description {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
     .box_check {
       margin-left: 5rem;
       transform: scale(0);
       transition-duration: 650ms;
-      transform: translateX(-10vh);
+      transform: translateX(-64px);
     } 
     .ico_check {
       transform: rotate(-360deg);
@@ -77,11 +72,22 @@ $shadow: 1px 3px 8px rgb(187, 187, 187);
   }
 }
 .btn_card {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+
+  .info_card {
+    overflow: hidden;
+  }
 
   .card_title, .card_description {
     margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .card_description {
     font-size: .8rem;
@@ -95,13 +101,15 @@ $shadow: 1px 3px 8px rgb(187, 187, 187);
 }
 .card_price {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   align-content: flex-end;
+  font-weight: bold;
+  padding-top: 23px;
 }
 
 .box_check {
   background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
+  //margin: -1rem -5.2rem -1rem 1rem;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 4rem;
@@ -109,6 +117,10 @@ $shadow: 1px 3px 8px rgb(187, 187, 187);
   align-items: center;
   justify-content: center;
   transition-duration: 450ms;
+  position: relative;
+  margin-right: -64px;
+
+
   .ico_check {
     color: #fff;
     font-size: 2rem;

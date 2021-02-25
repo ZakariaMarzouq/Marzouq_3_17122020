@@ -31,8 +31,8 @@ body {
 .container_card {
   display: flex;
   justify-content: space-between;
+  height: 80px;
   background-color: #fff;
-  padding: 1rem;
   border-radius: 0.75rem;
   margin: 0.5rem;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -40,16 +40,11 @@ body {
   cursor: pointer;
   max-width: 100%;
 }
-.container_card:hover .card_title, .container_card:hover .card_description {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 .container_card:hover .box_check {
   margin-left: 5rem;
   transform: scale(0);
   transition-duration: 650ms;
-  transform: translateX(-10vh);
+  transform: translateX(-64px);
 }
 .container_card:hover .ico_check {
   transform: rotate(-360deg);
@@ -57,11 +52,21 @@ body {
 }
 
 .btn_card {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.btn_card .info_card {
+  overflow: hidden;
 }
 .btn_card .card_title, .btn_card .card_description {
   margin: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .btn_card .card_description {
   font-size: 0.8rem;
@@ -75,13 +80,14 @@ body {
 
 .card_price {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   align-content: flex-end;
+  font-weight: bold;
+  padding-top: 23px;
 }
 
 .box_check {
   background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 4rem;
@@ -89,6 +95,8 @@ body {
   align-items: center;
   justify-content: center;
   transition-duration: 450ms;
+  position: relative;
+  margin-right: -64px;
 }
 .box_check .ico_check {
   color: #fff;
