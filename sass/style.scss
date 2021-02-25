@@ -34,7 +34,9 @@ a{
 li {
   list-style-type: none;
 }
-
+.heart_none{
+  display: none;
+}
 /* SECTION HEADER */
 header {
   .logo {
@@ -98,6 +100,7 @@ header {
       border: none;
       border-radius: 100px;
       background-color: $color_secondaire;
+      box-shadow: $shadow;
       color: white;
       font-size: 1rem;
       margin-top: 2rem;
@@ -209,6 +212,7 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      box-shadow: $shadow;
         .class {
           position: absolute;
           background: $color_tertiaire;
@@ -249,11 +253,34 @@ header {
             margin-top: 5px;
           }
       }
-      .btn_heart {
-        padding-right: 10px;
-        font-size: 1.7rem;
-        color:#000;
-        font-weight: lighter;
+      .btn_card {
+        font-size: 29px;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        background-color: #FFF;
+          .btn_heart {
+            position: relative;
+            color: #000;
+          }
+          .btn__heart {
+            position: absolute;
+            font-size: 24px;
+            color: #fff;
+            opacity: 0;
+            z-index: 0;
+            &:hover {
+              opacity: 1;
+              transition-duration: 250ms;
+              color: rgb(162, 115, 192);
+              font-size: 30px;
+              z-index: 1;
+            }
+          }
       }
     }
 }
@@ -287,6 +314,7 @@ footer {
   }
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 320px) {
   header {
     .maps {
@@ -408,6 +436,11 @@ footer {
       }
       .section_explore {
         width: 100%;
+        .btn {
+          width: 330px;
+          height: 70px;
+          font-size: 1.2rem;
+        }
       }
   }
 
@@ -415,13 +448,29 @@ footer {
     .filtres_cat {
         .cat {
           width: 280px;
-          height: 80px;
-          font-size: 1.1rem;
+          height: 160px;
+          font-size: 1.2rem;
+          justify-content: center;
+          align-items: flex-start;
+          border-radius: 0px;
+          border-bottom-right-radius: 25px;
+          border-top-left-radius: 25px;
+            a {
+              flex-direction: column;
+             
+            }
             .number {
-              margin-right: 20px;
+              width: 280px;
+              height: 35px;
+              margin: 0px 0px 35px 0px;
+              border-radius: 0;
+              border-top-left-radius: 25px;
+              font-size: 1.2rem;
             }
             .fa-mobile-alt, .fa-list-ul, .fa-store {
-              padding-right: 15px;
+              padding: 0px;
+              font-size: 2rem;
+              margin-bottom: 20px;
             }
         }
     }
@@ -437,4 +486,32 @@ footer {
       }
     }
   }
+}
+
+@media screen and (min-width: 1440px) { 
+
+  .filtres {
+    .filtres_cat {
+        .cat {
+          width: 380px;
+          height: 160px;
+          font-size: 1.2rem;
+            .number {
+              width: 380px;
+            }
+        }
+    }
+  }
+
+  #restaurant {
+    .resultat_rest {
+      .card {
+        width: 500px;
+      }
+      .class {
+        margin-left: 400px;
+      }
+    }
+  }
+
 }

@@ -14,7 +14,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100vw;
-  margin: 0;
+  margin: auto;
   font-family: "ROBOTO";
 }
 
@@ -50,8 +50,8 @@ li {
   margin-right: 100px;
 }
 
-/* SECTION MENU-1 */
-#menu1 {
+/* SECTION MENU */
+#menu {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
@@ -59,71 +59,103 @@ li {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   margin-top: -50px;
-  padding: 20px;
+  padding: 10px;
 }
-#menu1 .heading_menu {
+#menu .heading_menu {
   display: flex;
   justify-content: space-between;
 }
-#menu1 .heading_menu h2 {
+#menu .heading_menu h2 {
   font-family: "Shrikhand";
   font-size: 1.65rem;
 }
-#menu1 .heading_menu .btn {
+#menu .heading_menu .btn {
   border: none;
   background-color: #f6f6f6;
   padding-right: 15px;
   cursor: pointer;
 }
-#menu1 .heading_menu .btn .fa-heart {
+#menu .heading_menu .btn .fa-heart {
   font-size: 25px;
 }
-#menu1 .card_menu {
+
+.card_menu .heading {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.card_menu .border {
+  background: #15DEA5;
+  width: 50px;
+  height: 4px;
   margin-bottom: 40px;
 }
-#menu1 .card_menu .heading {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: lighter;
-  margin-bottom: 2px;
-}
-#menu1 .card_menu .border {
-  width: 45px;
-  height: 4px;
-  background: #99E2D0;
-}
-#menu1 .card_menu .card {
-  height: 60px;
-  background: white;
-  border-radius: 15px;
-  padding: 5px;
-  margin-top: 20px;
-  box-shadow: 1px 3px 8px #bbbbbb;
-  transition: transform 400ms;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-}
-#menu1 .card_menu .card:hover {
-  background-color: #15DEA5;
-  background: radial-gradient(circle, #22eab1 0%, #11af82 100%);
-  opacity: 0.7;
-  transition: opacity 250ms;
-}
-#menu1 .card_menu .card .heading_card {
-  font-size: 1.1rem;
-  margin: 10px 0px -10px 10px;
-}
-#menu1 .card_menu .card .info_card {
+
+.container_card {
   display: flex;
   justify-content: space-between;
-  margin: 0px 10px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
 }
-#menu1 .card_menu .card .info_card p {
-  font-size: 14px;
+.container_card:hover .card_title, .container_card:hover .card_description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-#menu1 .card_menu .card .info_card .price {
-  font-weight: bold;
+.container_card:hover .box_check {
+  margin-left: 5rem;
+  transform: scale(0);
+  transition-duration: 650ms;
+  transform: translateX(-10vh);
+}
+.container_card:hover .ico_check {
+  transform: rotate(-360deg);
+  transition-duration: 650ms;
+}
+
+.btn_card {
+  display: flex;
+  justify-content: space-between;
+}
+.btn_card .card_title, .btn_card .card_description {
+  margin: 0px;
+}
+.btn_card .card_description {
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-top: 4px;
+}
+
+.container_checked {
+  display: flex;
+}
+
+.card_price {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.box_check {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 450ms;
+}
+.box_check .ico_check {
+  color: #fff;
+  font-size: 2rem;
 }
 
 .btn_valid {
