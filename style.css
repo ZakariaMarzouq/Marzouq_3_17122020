@@ -88,7 +88,7 @@ header .section_explore .btn {
   justify-content: center;
   align-items: center;
   width: 220px;
-  height: 50px;
+  height: 70px;
   border: none;
   border-radius: 100px;
   background-color: #9356DC;
@@ -266,8 +266,8 @@ header .section_explore .btn::after {
 }
 #restaurant .info_card .btn_card .btn__heart:hover {
   opacity: 1;
-  transition-duration: 650ms;
-  color: green;
+  transition-duration: 600ms;
+  color: #ae1072;
   font-size: 31px;
   z-index: 1;
 }

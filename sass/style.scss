@@ -100,7 +100,7 @@ header {
       justify-content: center;
       align-items: center;
       width: 220px;
-      height: 50px;
+      height: 70px;
       border: none;
       border-radius: 100px;
       background-color: $color_primaire;
@@ -279,8 +279,8 @@ header {
             z-index: 0;
             &:hover {
               opacity: 1;
-              transition-duration: 650ms;
-              color: green;
+              transition-duration: 600ms;
+              color: darken(rgb(241, 102, 188), 30);
               font-size: 31px;
               z-index: 1;
             }

@@ -245,16 +245,16 @@ li {
     text-align: center;
     border: none;
     border-radius: 100px;
-    background-color: $color_secondaire;
+    background-color: $color_primaire;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
     z-index: 1;
     &:hover {
       &::after {
-          opacity: 0;
+          opacity: 1;
       }
     }
     &::after {
@@ -265,7 +265,7 @@ li {
       right: 0;
       bottom: 0;
       left: 0;
-      background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 100%);
+      background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 170%);
       opacity: 0.7;
       z-index: -1;
       transition: opacity 250ms;
