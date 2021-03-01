@@ -370,11 +370,6 @@ $anim-delay: $anim-dur / 4;
         &--#{$i} {
           animation-delay: $anim-delay * $i;
         }
-        &--#{$i}-inv {
-          animation-delay: $anim-delay * $i;
-          animation-direction: alternate-reverse;
-          background-color: $cd-bars-inv;
-        }
       }
     }
     &__bar--1 {

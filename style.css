@@ -13,31 +13,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: item 0.01s;
 }
 
 .loader {
-  width: 50%;
+  width: 70%;
   height: 100px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   position: fixed;
   padding-top: 100%;
+  border-radius: 100px;
 }
 .loader__item {
   height: 20px;
-  border-radius: 3vh;
+  border-radius: 10vh;
   margin-bottom: 10px;
   animation: item 800ms backwards infinite ease-in-out alternate-reverse;
 }
 .loader__item--1 {
-  animation-delay: 266.6666666667ms;
+  animation-delay: 200ms;
 }
 .loader__item--2 {
-  animation-delay: 533.3333333333ms;
+  animation-delay: 400ms;
 }
 .loader__item--3 {
+  animation-delay: 600ms;
+}
+.loader__item--4 {
   animation-delay: 800ms;
 }
 .loader__item--1 {

@@ -327,34 +327,14 @@ input {
 .load__bar--1 {
   animation-delay: 250ms;
 }
-.load__bar--1-inv {
-  animation-delay: 250ms;
-  animation-direction: alternate-reverse;
-  background-color: #0E397F;
-}
 .load__bar--2 {
   animation-delay: 500ms;
-}
-.load__bar--2-inv {
-  animation-delay: 500ms;
-  animation-direction: alternate-reverse;
-  background-color: #0E397F;
 }
 .load__bar--3 {
   animation-delay: 750ms;
 }
-.load__bar--3-inv {
-  animation-delay: 750ms;
-  animation-direction: alternate-reverse;
-  background-color: #0E397F;
-}
 .load__bar--4 {
   animation-delay: 1000ms;
-}
-.load__bar--4-inv {
-  animation-delay: 1000ms;
-  animation-direction: alternate-reverse;
-  background-color: #0E397F;
 }
 .load__bar--1 {
   background-color: #15DEA5;

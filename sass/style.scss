@@ -21,8 +21,7 @@ $shadow: 1px 3px 8px rgb(209, 209, 209);
 
 /* LOADER */
 $cd-bars: #15DEA5;
-$size: 4vh;
-$num-items : 3;
+$num-items : 4;
 $anim-dur: 800ms;
 $anim-delay: $anim-dur / $num-items;
 
@@ -30,20 +29,20 @@ $anim-delay: $anim-dur / $num-items;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: item .01s;
-  
 }
+
 .loader {
-  width: 50%;
+  width: 70%;
   height: 100px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   position: fixed;
-  padding-top: 100%;
+  padding-top:100%;
+  border-radius: 100px;
   &__item {
     height:20px;
-    border-radius: 3vh;
+    border-radius: 10vh;
     margin-bottom: 10px;
     animation: item $anim-dur backwards infinite ease-in-out alternate-reverse;
       @for $i from 1 through $num-items {
