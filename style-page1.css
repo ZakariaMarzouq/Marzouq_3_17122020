@@ -118,19 +118,19 @@ li {
 .card_menu {
   opacity: 0;
   position: relative;
-  animation: card-opacity 1500ms 850ms forwards;
+  animation: card-opacity 2s forwards;
 }
 
 .card__menu__first__part {
-  animation-delay: 550ms;
+  animation-delay: 1s;
 }
 
 .card__menu__second__part {
-  animation-delay: 1000ms;
+  animation-delay: 2s;
 }
 
 .card__menu__third__part {
-  animation-delay: 1500ms;
+  animation-delay: 3s;
 }
 
 .container_card {
