@@ -8,6 +8,59 @@
   src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
 }
 /* Variable */
+/* LOADER */
+.container_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: item 0.01s;
+}
+
+.loader {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: fixed;
+  padding-top: 100%;
+}
+.loader__item {
+  height: 20px;
+  border-radius: 3vh;
+  margin-bottom: 10px;
+  animation: item 800ms backwards infinite ease-in-out alternate-reverse;
+}
+.loader__item--1 {
+  animation-delay: 266.6666666667ms;
+}
+.loader__item--2 {
+  animation-delay: 533.3333333333ms;
+}
+.loader__item--3 {
+  animation-delay: 800ms;
+}
+.loader__item--1 {
+  background-color: #15DEA5;
+}
+.loader__item--2 {
+  background-color: #9356DC;
+}
+.loader__item--3 {
+  background-color: #FF79DA;
+}
+.loader__item--4 {
+  background-color: #99E2D0;
+}
+
+@keyframes item {
+  0% {
+    transform: scaleX(0.3);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
 /*General*/
 body {
   display: flex;
@@ -91,7 +144,7 @@ header .section_explore .btn {
   height: 50px;
   border: none;
   border-radius: 100px;
-  background-color: #FF79DA;
+  background-color: #9356DC;
   box-shadow: 1px 3px 8px #d1d1d1;
   color: white;
   font-size: 1rem;
@@ -101,7 +154,7 @@ header .section_explore .btn {
   z-index: 1;
 }
 header .section_explore .btn:hover::after {
-  opacity: 0;
+  opacity: 1;
 }
 header .section_explore .btn::after {
   content: "";
@@ -111,7 +164,7 @@ header .section_explore .btn::after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle, #ff93e1 0%, #8b50b0 100%);
+  background: radial-gradient(circle, #ff93e1 0%, #782cd3 170%);
   opacity: 0.7;
   z-index: -1;
   transition: opacity 250ms;
@@ -266,9 +319,9 @@ header .section_explore .btn::after {
 }
 #restaurant .info_card .btn_card .btn__heart:hover {
   opacity: 1;
-  transition-duration: 250ms;
-  color: #a273c0;
-  font-size: 30px;
+  transition-duration: 650ms;
+  color: green;
+  font-size: 31px;
   z-index: 1;
 }
 

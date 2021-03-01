@@ -18,7 +18,66 @@ $color_tertiaire:#99E2D0;
 $clr-btn: #15DEA5;
 $shadow: 1px 3px 8px rgb(209, 209, 209);
 
+
+/* LOADER */
+$cd-bars: #15DEA5;
+$size: 4vh;
+$num-items : 3;
+$anim-dur: 800ms;
+$anim-delay: $anim-dur / $num-items;
+
+.container_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: item .01s;
+  
+}
+.loader {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: fixed;
+  padding-top: 100%;
+  &__item {
+    height:20px;
+    border-radius: 3vh;
+    margin-bottom: 10px;
+    animation: item $anim-dur backwards infinite ease-in-out alternate-reverse;
+      @for $i from 1 through $num-items {
+        &--#{$i} {
+        animation-delay: $anim-delay * $i;
+        }
+      }
+  }
+    
+  &__item--1 {
+    background-color: $cd-bars;
+  }
+  &__item--2 {
+    background-color:$color_primaire;
+  }
+  &__item--3 {
+    background-color: $color_secondaire;
+  }
+  &__item--4 {
+    background-color: $color_tertiaire;
+  }
+}
+
+@keyframes item {
+  0% {
+      transform: scaleX(0.3);
+  }
+  100% {
+      transform: scaleX(0);
+  }
+}
+
 /*General*/
+
 body {
   display: flex;
   justify-content: center;
@@ -82,7 +141,8 @@ header {
     height: 300px;
     .heading_explore {
       font-family: $police_secondaire;
-      font-size: 1.5rem;      text-align: center;
+      font-size: 1.5rem;      
+      text-align: center;
       padding: 15px 15px 0 15px;
     }
     p {
@@ -99,7 +159,7 @@ header {
       height: 50px;
       border: none;
       border-radius: 100px;
-      background-color: $color_secondaire;
+      background-color: $color_primaire;
       box-shadow: $shadow;
       color: white;
       font-size: 1rem;
@@ -109,7 +169,7 @@ header {
       z-index: 1;
       &:hover {
         &::after {
-            opacity: 0;
+            opacity: 1;
         }
       }
       &::after {
@@ -120,7 +180,7 @@ header {
         right: 0;
         bottom: 0;
         left: 0;
-        background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 100%);
+        background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(#9356DC, 10) 170%);
         opacity: 0.7;
         z-index: -1;
         transition: opacity 250ms;
@@ -275,9 +335,9 @@ header {
             z-index: 0;
             &:hover {
               opacity: 1;
-              transition-duration: 250ms;
-              color: rgb(162, 115, 192);
-              font-size: 30px;
+              transition-duration: 650ms;
+              color: green;
+              font-size: 31px;
               z-index: 1;
             }
           }
