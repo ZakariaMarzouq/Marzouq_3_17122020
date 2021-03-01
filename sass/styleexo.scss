@@ -13,6 +13,65 @@ body {
     font-family: 'Roboto';
 }
 
+
+
+/* LOADER */
+$cd-bars: #15DEA5;
+$num-items : 4;
+$anim-dur: 800ms;
+$anim-delay: $anim-dur / $num-items;
+
+.container_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loader {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: fixed;
+  padding-top:100%;
+  border-radius: 100px;
+  &__item {
+    height:20px;
+    border-radius: 10vh;
+    margin-bottom: 10px;
+    animation: item $anim-dur backwards infinite ease-in-out alternate-reverse;
+      @for $i from 1 through $num-items {
+        &--#{$i} {
+        animation-delay: $anim-delay * $i;
+        }
+      }
+  }
+    
+  &__item--1 {
+    background-color: $cd-bars;
+  }
+  &__item--2 {
+    background-color:$color_primaire;
+  }
+  &__item--3 {
+    background-color: $color_secondaire;
+  }
+  &__item--4 {
+    background-color: $color_tertiaire;
+  }
+}
+
+@keyframes item {
+  0% {
+      transform: scaleX(0.3);
+  }
+  100% {
+      transform: scaleX(0);
+  }
+}
+
 /* VALEUR POUR LE BOUTTON */
 
 $cd-btn: #011c37;

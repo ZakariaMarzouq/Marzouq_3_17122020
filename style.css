@@ -8,63 +8,6 @@
   src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
 }
 /* Variable */
-/* LOADER */
-.container_loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.loader {
-  width: 70%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  position: fixed;
-  padding-top: 100%;
-  border-radius: 100px;
-}
-.loader__item {
-  height: 20px;
-  border-radius: 10vh;
-  margin-bottom: 10px;
-  animation: item 800ms backwards infinite ease-in-out alternate-reverse;
-}
-.loader__item--1 {
-  animation-delay: 200ms;
-}
-.loader__item--2 {
-  animation-delay: 400ms;
-}
-.loader__item--3 {
-  animation-delay: 600ms;
-}
-.loader__item--4 {
-  animation-delay: 800ms;
-}
-.loader__item--1 {
-  background-color: #15DEA5;
-}
-.loader__item--2 {
-  background-color: #9356DC;
-}
-.loader__item--3 {
-  background-color: #FF79DA;
-}
-.loader__item--4 {
-  background-color: #99E2D0;
-}
-
-@keyframes item {
-  0% {
-    transform: scaleX(0.3);
-  }
-  100% {
-    transform: scaleX(0);
-  }
-}
 /*General*/
 body {
   display: flex;
@@ -210,6 +153,9 @@ header .section_explore .btn::after {
 .filtres .cat:hover {
   background-color: #f5edff;
 }
+.filtres .cat:hover .fa-mobile-alt, .filtres .cat:hover .fa-list-ul, .filtres .cat:hover .fa-store {
+  color: #9356DC;
+}
 .filtres .cat .number {
   display: flex;
   align-items: center;
@@ -228,9 +174,6 @@ header .section_explore .btn::after {
   color: #7e7e7e;
   padding-right: 25px;
   font-size: 1.2rem;
-}
-.filtres .cat .fa-mobile-alt:hover, .filtres .cat .fa-list-ul:hover, .filtres .cat .fa-store:hover {
-  color: #9356DC;
 }
 
 /* SECTION RESTAURANTS */
