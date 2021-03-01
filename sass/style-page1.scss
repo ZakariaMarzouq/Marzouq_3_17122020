@@ -64,6 +64,7 @@ li {
   .logo {
     width: 80%;
     height: 60px;
+    margin-left: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +119,34 @@ li {
     margin-left: 10px;
   }
 }
- 
+
+@keyframes card-opacity {
+
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.card_menu {
+  opacity: 0;
+  position: relative;
+  animation: card-opacity 1500ms 850ms forwards;
+}
+
+.card__menu__first__part {
+  animation-delay: 550ms;
+}
+
+.card__menu__second__part {
+  animation-delay: 1000ms;
+}
+
+.card__menu__third__part {
+  animation-delay: 1500ms;
+}
 
 .container_card {
   display: flex;
@@ -131,6 +159,7 @@ li {
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
+  
   &:hover {
     .box_check {
       margin-left: 5rem;
