@@ -469,6 +469,14 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    .container_loader {
+      .loader {
+        padding-top:30%;
+      }
+    }
+  }
+  
   header {
     display: flex;
     flex-wrap: wrap;
@@ -551,6 +559,7 @@ footer {
     }
   }
 }
+
 
 @media screen and (min-width: 1440px) { 
   .filtres {
