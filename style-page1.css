@@ -1,12 +1,6 @@
 /* Polices */
-@font-face {
-  font-family: "Shrikhand-Regular";
-  src: url("/fonts/Shrikhand-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "ROBOTO";
-  src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Variable */
 /* Generale */
 body {

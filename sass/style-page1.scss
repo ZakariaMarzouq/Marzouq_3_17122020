@@ -1,13 +1,7 @@
 /* Polices */
-@font-face {
-  font-family: 'Shrikhand-Regular';
-  src:url('/fonts/Shrikhand-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-@font-face{ 
-	font-family: 'ROBOTO';
-	src: url('/Fonts/Roboto-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Variable */
 $police_primaire:'Shrikhand';

@@ -1,13 +1,64 @@
 /* Polices */
-@font-face {
-  font-family: "Shrikhand-Regular";
-  src: url("/fonts/Shrikhand-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "ROBOTO";
-  src: url("/Fonts/Roboto-Regular.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Variable */
+/* LOADER */
+.container_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loader {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: fixed;
+  padding-top: 100%;
+  border-radius: 100px;
+}
+.loader__item {
+  height: 20px;
+  border-radius: 10vh;
+  margin-bottom: 10px;
+  animation: item 800ms backwards infinite ease-in-out alternate-reverse;
+}
+.loader__item--1 {
+  animation-delay: 200ms;
+}
+.loader__item--2 {
+  animation-delay: 400ms;
+}
+.loader__item--3 {
+  animation-delay: 600ms;
+}
+.loader__item--4 {
+  animation-delay: 800ms;
+}
+.loader__item--1 {
+  background-color: #15DEA5;
+}
+.loader__item--2 {
+  background-color: #9356DC;
+}
+.loader__item--3 {
+  background-color: #FF79DA;
+}
+.loader__item--4 {
+  background-color: #99E2D0;
+}
+
+@keyframes item {
+  0% {
+    transform: scaleX(0.3);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
 /*General*/
 body {
   display: flex;
@@ -24,10 +75,6 @@ a {
 
 li {
   list-style-type: none;
-}
-
-.heart_none {
-  display: none;
 }
 
 /* SECTION HEADER */
@@ -270,6 +317,16 @@ header .section_explore .btn::after {
   color: #ae1072;
   font-size: 31px;
   z-index: 1;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+label input:checked .btn_heart {
+  background: red;
 }
 
 /* FOOTER */
