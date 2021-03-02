@@ -18,6 +18,16 @@ $num-items : 4;
 $anim-dur: 800ms;
 $anim-delay: $anim-dur / $num-items;
 
+
+@keyframes item {
+  0% {
+      transform: scaleX(0.3);
+  }
+  100% {
+      transform: scaleX(0);
+  }
+}
+
 .container_loader {
   display: flex;
   justify-content: center;
@@ -60,17 +70,8 @@ $anim-delay: $anim-dur / $num-items;
   }
 }
 
-@keyframes item {
-  0% {
-      transform: scaleX(0.3);
-  }
-  100% {
-      transform: scaleX(0);
-  }
-}
 
 /*General*/
-
 body {
   display: flex;
   justify-content: center;
@@ -341,12 +342,10 @@ label {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  input {
-    &:checked {
-      .btn_heart {
+  input:checked{
+    .btn_heart {
       background: red;
-      } 
-    }
+    } 
   }
 }
 
@@ -578,4 +577,44 @@ footer {
     }
   }
 
+}
+
+@media screen and (min-width: 1500px) {
+  .resultat_rest {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .filtres {
+    .filtres_cat {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+  #restaurant {
+    .resultat_rest {
+      padding-left: 10%;
+      padding-right: 10%;
+      .card {
+        width: 600px;
+        height: 350px;
+        justify-content: space-between;
+        .class {
+          margin-left: 480px;
+          width: 100px;
+          height: 40px;
+          font-size: 1.2rem;
+        }
+        .img_card {
+          height: 270px;
+        }
+        .heading_card {
+          font-size: 1.3rem;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
 }

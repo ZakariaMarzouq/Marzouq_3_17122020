@@ -3,6 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Variable */
 /* LOADER */
+@keyframes item {
+  0% {
+    transform: scaleX(0.3);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
 .container_loader {
   display: flex;
   justify-content: center;
@@ -51,14 +59,6 @@
   background-color: #99E2D0;
 }
 
-@keyframes item {
-  0% {
-    transform: scaleX(0.3);
-  }
-  100% {
-    transform: scaleX(0);
-  }
-}
 /*General*/
 body {
   display: flex;
@@ -513,6 +513,41 @@ footer ul a {
   }
   #restaurant .resultat_rest .class {
     margin-left: 400px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .resultat_rest {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .filtres .filtres_cat {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #restaurant .resultat_rest {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #restaurant .resultat_rest .card {
+    width: 600px;
+    height: 350px;
+    justify-content: space-between;
+  }
+  #restaurant .resultat_rest .card .class {
+    margin-left: 480px;
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  #restaurant .resultat_rest .card .img_card {
+    height: 270px;
+  }
+  #restaurant .resultat_rest .card .heading_card {
+    font-size: 1.3rem;
+    margin-left: 15px;
   }
 }
 
