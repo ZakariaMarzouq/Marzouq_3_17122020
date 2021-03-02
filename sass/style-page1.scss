@@ -19,7 +19,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100vw;
-  margin: auto;
+  margin: 0;
   font-family: $police_secondaire;
 }
 
@@ -295,5 +295,16 @@ footer {
     a {
       color: #FFF;
     }
+  }
+}
+@media screen and (min-width: 600px) {
+  #menu {
+    padding: 70px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #menu {
+    padding: 100px;
   }
 }

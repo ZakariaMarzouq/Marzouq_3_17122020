@@ -8,7 +8,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100vw;
-  margin: auto;
+  margin: 0;
   font-family: "ROBOTO";
 }
 
@@ -270,6 +270,17 @@ footer ul .fa-hands-helping {
 }
 footer ul a {
   color: #FFF;
+}
+
+@media screen and (min-width: 600px) {
+  #menu {
+    padding: 70px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #menu {
+    padding: 100px;
+  }
 }
 
 /*# sourceMappingURL=style-page1.css.map */
