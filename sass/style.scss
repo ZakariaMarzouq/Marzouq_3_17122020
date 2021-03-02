@@ -1,13 +1,7 @@
 /* Polices */
-@font-face {
-    font-family: 'Shrikhand-Regular';
-    src:url('/fonts/Shrikhand-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-@font-face{ 
-	font-family: 'ROBOTO';
-	src: url('/Fonts/Roboto-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Variable */
 $police_primaire:'Shrikhand';
@@ -18,7 +12,62 @@ $color_tertiaire:#99E2D0;
 $clr-btn: #15DEA5;
 $shadow: 1px 3px 8px rgb(209, 209, 209);
 
+/* LOADER */
+$cd-bars: #15DEA5;
+$num-items : 4;
+$anim-dur: 800ms;
+$anim-delay: $anim-dur / $num-items;
 
+.container_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loader {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: fixed;
+  padding-top:100%;
+  border-radius: 100px;
+  &__item {
+    height:20px;
+    border-radius: 10vh;
+    margin-bottom: 10px;
+    animation: item $anim-dur backwards infinite ease-in-out alternate-reverse;
+      @for $i from 1 through $num-items {
+        &--#{$i} {
+        animation-delay: $anim-delay * $i;
+        }
+      }
+  }
+    
+  &__item--1 {
+    background-color: $cd-bars;
+  }
+  &__item--2 {
+    background-color:$color_primaire;
+  }
+  &__item--3 {
+    background-color: $color_secondaire;
+  }
+  &__item--4 {
+    background-color: $color_tertiaire;
+  }
+}
+
+@keyframes item {
+  0% {
+      transform: scaleX(0.3);
+  }
+  100% {
+      transform: scaleX(0);
+  }
+}
 
 /*General*/
 
@@ -37,9 +86,7 @@ a{
 li {
   list-style-type: none;
 }
-.heart_none{
-  display: none;
-}
+
 /* SECTION HEADER */
 header {
   .logo {
@@ -289,6 +336,20 @@ header {
     }
 }
 
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  input {
+    &:checked {
+      .btn_heart {
+      background: red;
+      } 
+    }
+  }
+}
+
 /* FOOTER */
 footer {
   height: 250px;
@@ -493,7 +554,6 @@ footer {
 }
 
 @media screen and (min-width: 1440px) { 
-
   .filtres {
     .filtres_cat {
         .cat {
