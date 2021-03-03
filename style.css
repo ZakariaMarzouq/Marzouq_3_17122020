@@ -23,7 +23,7 @@ li {
 /* LOADER */
 @keyframes item {
   0% {
-    transform: scaleX(0.3);
+    transform: scaleX(0.5);
   }
   100% {
     transform: scaleX(0);
@@ -55,14 +55,11 @@ li {
   top: 0;
   bottom: 0;
   position: fixed;
-  z-index: 100;
-  opacity: 1;
   animation: loader 10ms ease-out 3000ms forwards;
 }
 
 .loader {
   width: 70%;
-  height: 100px;
   display: flex;
   flex-direction: column;
   border-radius: 100px;
@@ -71,7 +68,7 @@ li {
   height: 20px;
   border-radius: 10vh;
   margin-bottom: 10px;
-  animation: item 800ms backwards infinite ease-in-out alternate-reverse;
+  animation: item 800ms backwards 4 ease-in-out alternate-reverse;
 }
 .loader__item--1 {
   animation-delay: 200ms;
@@ -99,7 +96,8 @@ li {
 }
 
 .homepage {
-  animation: page-visibility 10ms ease-in 3000ms;
+  opacity: 1;
+  animation: page-visibility 10ms ease-in 3000ms both;
 }
 
 /* FIN DU LOADER */
@@ -458,10 +456,6 @@ footer ul a {
   }
 }
 @media screen and (min-width: 1024px) {
-  body .container_loader .loader {
-    padding-top: 30%;
-  }
-
   header {
     display: flex;
     flex-wrap: wrap;
