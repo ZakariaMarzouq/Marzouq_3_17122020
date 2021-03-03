@@ -73,14 +73,30 @@ li {
   font-family: "Shrikhand";
   font-size: 1.65rem;
 }
-#menu .heading_menu .btn {
-  border: none;
-  background-color: #f6f6f6;
-  padding-right: 15px;
+#menu .heading_menu .btn_card {
+  font-size: 29px;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  position: relative;
 }
-#menu .heading_menu .btn .fa-heart {
-  font-size: 25px;
+#menu .heading_menu .btn_card .btn_heart {
+  position: relative;
+  color: #000;
+}
+#menu .heading_menu .btn_card .btn__heart {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  opacity: 0;
+}
+#menu .heading_menu .btn_card .btn__heart:hover {
+  opacity: 1;
+  transition-duration: 600ms;
+  color: #FF79DA;
+  font-size: 31px;
 }
 
 .card_menu {
@@ -139,6 +155,9 @@ li {
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
+}
+.container_card:hover {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.4);
 }
 .container_card:hover .box_check {
   margin-left: 5rem;
@@ -214,8 +233,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 220px;
-  height: 70px;
+  width: 200px;
+  height: 60px;
   text-align: center;
   border: none;
   border-radius: 100px;
@@ -238,38 +257,39 @@ li {
   right: 0;
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle, #ff93e1 0%, #8b50b0 170%);
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.4);
   opacity: 0.7;
   z-index: -1;
   transition: opacity 250ms;
 }
 
 /* FOOTER */
-footer {
++ footer {
   height: 250px;
   background: #353535;
 }
-footer h1 {
++ footer h1 {
   padding: 20px 0 0 20px;
   font-family: "Shrikhand";
   color: #FFF;
   font-size: 1.3rem;
 }
-footer ul {
++ footer ul {
   font-size: 1.2rem;
   line-height: 30px;
   padding-left: 20px;
   color: #FFF;
 }
-footer ul .fa-utensils {
++ footer ul .fa-utensils {
   font-size: 0.8rem;
   padding-right: 13px;
 }
-footer ul .fa-hands-helping {
++ footer ul .fa-hands-helping {
   font-size: 0.8rem;
   padding-right: 8px;
 }
-footer ul a {
++ footer ul a {
   color: #FFF;
 }
 

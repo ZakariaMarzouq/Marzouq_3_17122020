@@ -182,7 +182,8 @@ header .section_explore .btn::after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle, #ff93e1 0%, #782cd3 170%);
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
   opacity: 0.7;
   z-index: -1;
   transition: opacity 250ms;
