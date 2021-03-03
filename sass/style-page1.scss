@@ -84,14 +84,30 @@ li {
       font-family: $police_primaire;
       font-size: 1.65rem;
     }
-    .btn {
-      border:none;
-      background-color: $color_fond;
-      padding-right: 15px;
+    .btn_card {
+      font-size: 29px;
+      width: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
-      .fa-heart {
-        font-size: 25px;
-      }
+      position: relative;
+        .btn_heart {
+          position: relative;
+          color: #000;
+        }
+        .btn__heart {            
+          position: absolute;
+          font-size: 24px;
+          color: #fff;
+          opacity: 0;
+          &:hover {
+            opacity: 1;
+            transition-duration: 600ms;
+            color: $color_secondaire;
+            font-size: 31px;
+          }
+        }
     }
   }
 }  
@@ -155,11 +171,13 @@ li {
   max-width: 100%;
   
   &:hover {
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 40%);
     .box_check {
       margin-left: 5rem;
       transform: scale(0);
       transition-duration: 650ms;
       transform: translateX(-64px);
+
     } 
     .ico_check {
       transform: rotate(-360deg);
@@ -234,8 +252,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
-    height: 70px;
+    width: 200px;
+    height: 60px;
     text-align: center;
     border: none;
     border-radius: 100px;
@@ -259,7 +277,8 @@ li {
       right: 0;
       bottom: 0;
       left: 0;
-      background: radial-gradient(circle, lighten($color_secondaire, 5) 0%, darken(rgb(162, 115, 192), 10) 170%);
+      background: linear-gradient(#ff79da, #9356dc);
+      box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 40%);
       opacity: 0.7;
       z-index: -1;
       transition: opacity 250ms;
@@ -269,7 +288,6 @@ li {
 }
 
 /* FOOTER */
-
 footer {
   height: 250px;
   background: rgb(53, 53 , 53);
