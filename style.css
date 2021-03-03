@@ -2,6 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Variable */
+/* SECTION CONFIG GENERAL */
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0;
+  font-family: "ROBOTO";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* LOADER */
 @keyframes item {
   0% {
@@ -11,11 +29,35 @@
     transform: scaleX(0);
   }
 }
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes page-visibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container_loader {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  background: #353535;
+  width: 100%;
+  max-height: 100%;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+  opacity: 1;
+  animation: loader 10ms ease-out 3000ms forwards;
 }
 
 .loader {
@@ -23,9 +65,6 @@
   height: 100px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
-  position: fixed;
-  padding-top: 100%;
   border-radius: 100px;
 }
 .loader__item {
@@ -59,24 +98,11 @@
   background-color: #99E2D0;
 }
 
-/*General*/
-body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100vw;
-  margin: 0;
-  font-family: "ROBOTO";
+.homepage {
+  animation: page-visibility 10ms ease-in 3000ms;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
+/* FIN DU LOADER */
 /* SECTION HEADER */
 header .logo {
   display: flex;
@@ -164,6 +190,7 @@ header .section_explore .btn::after {
   transition: opacity 250ms;
 }
 
+/* FIN DE SECTION HEADER */
 /* SECTION FILTRES */
 .filtres {
   display: flex;
@@ -223,6 +250,7 @@ header .section_explore .btn::after {
   font-size: 1.2rem;
 }
 
+/* FIN DE SECTION FILTRES */
 /* SECTION RESTAURANTS */
 #restaurant {
   display: flex;
@@ -276,6 +304,34 @@ header .section_explore .btn::after {
   display: flex;
   justify-content: space-between;
   margin: 0px 12px;
+  /*btn_card {
+   font-size: 29px;
+   height: 2rem;
+   width: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   position: relative;
+   background-color: #FFF;
+     .btn_heart {
+       position: relative;
+       color: #000;
+     }
+     .btn__heart {
+       position: absolute;
+       font-size: 24px;
+       color: #fff;
+       opacity: 0;
+       z-index: 0;
+       &:hover {
+         opacity: 1;
+         transition-duration: 600ms;
+         color: darken(rgb(241, 102, 188), 30);
+         font-size: 31px;
+         z-index: 1;
+       }
+     }*/
 }
 #restaurant .info_card .heading_card {
   display: flex;
@@ -289,50 +345,26 @@ header .section_explore .btn::after {
 #restaurant .info_card .heading_card p {
   margin-top: 5px;
 }
-#restaurant .info_card .btn_card {
-  font-size: 29px;
-  height: 2rem;
-  width: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-  background-color: #FFF;
-}
-#restaurant .info_card .btn_card .btn_heart {
-  position: relative;
-  color: #000;
-}
-#restaurant .info_card .btn_card .btn__heart {
-  position: absolute;
-  font-size: 24px;
-  color: #fff;
-  opacity: 0;
-  z-index: 0;
-}
-#restaurant .info_card .btn_card .btn__heart:hover {
-  opacity: 1;
-  transition-duration: 600ms;
-  color: #ae1072;
-  font-size: 31px;
-  z-index: 1;
+
+.fa-gradient {
+  background: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-}
-label input:checked .btn_heart {
-  background: red;
+#ico_coeur {
+  display: none;
 }
 
+#ico_coeur:checked #emply_heart:hover + .ico_coeur {
+  display: none;
+}
+/* FIN DE SECTION RESTAURANTS */
 /* FOOTER */
 footer {
   height: 250px;
   background: #353535;
+  padding-top: 1%;
 }
 footer h1 {
   padding: 20px 0 0 20px;
@@ -358,6 +390,7 @@ footer ul a {
   color: #FFF;
 }
 
+/* FIN SECTION FOOTER */
 /* MEDIA QUERIES */
 @media screen and (max-width: 320px) {
   header .maps .fa-map-marker-alt {
