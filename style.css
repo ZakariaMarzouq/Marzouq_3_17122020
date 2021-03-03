@@ -346,7 +346,6 @@ header .section_explore .btn::after {
 
 .fa-gradient {
   background: linear-gradient(#e66465, #9198e5);
-  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -357,6 +356,7 @@ header .section_explore .btn::after {
 #ico_coeur:checked #emply_heart:hover + .ico_coeur {
   display: none;
 }
+
 /* FIN DE SECTION RESTAURANTS */
 /* FOOTER */
 footer {

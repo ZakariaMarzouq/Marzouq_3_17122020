@@ -387,7 +387,7 @@ header {
 
 .fa-gradient {
   background: linear-gradient(#e66465, #9198e5);
-  -webkit-background-clip: text;
+  //-webkit-background-clip: text;
   color: transparent;
 }
 #ico_coeur {
@@ -401,8 +401,6 @@ header {
     }
   }
 
-  #full_heart {
-  }
 }
 /* FIN DE SECTION RESTAURANTS */
 
@@ -423,7 +421,7 @@ footer {
     line-height: 30px;
     padding-left: 20px;
     color:#FFF;
-    .fa-utensils,  {
+    .fa-utensils {
       font-size: 0.8rem;
       padding-right: 13px;
     }
