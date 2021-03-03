@@ -265,31 +265,31 @@ li {
 }
 
 /* FOOTER */
-+ footer {
+footer {
   height: 250px;
   background: #353535;
 }
-+ footer h1 {
+footer h1 {
   padding: 20px 0 0 20px;
   font-family: "Shrikhand";
   color: #FFF;
   font-size: 1.3rem;
 }
-+ footer ul {
+footer ul {
   font-size: 1.2rem;
   line-height: 30px;
   padding-left: 20px;
   color: #FFF;
 }
-+ footer ul .fa-utensils {
+footer ul .fa-utensils {
   font-size: 0.8rem;
   padding-right: 13px;
 }
-+ footer ul .fa-hands-helping {
+footer ul .fa-hands-helping {
   font-size: 0.8rem;
   padding-right: 8px;
 }
-+ footer ul a {
+footer ul a {
   color: #FFF;
 }
 
