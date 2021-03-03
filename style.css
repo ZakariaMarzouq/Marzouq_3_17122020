@@ -302,61 +302,68 @@ header .section_explore .btn::after {
   display: flex;
   justify-content: space-between;
   margin: 0px 12px;
-  /*btn_card {
-   font-size: 29px;
-   height: 2rem;
-   width: 2rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   cursor: pointer;
-   position: relative;
-   background-color: #FFF;
-     .btn_heart {
-       position: relative;
-       color: #000;
-     }
-     .btn__heart {
-       position: absolute;
-       font-size: 24px;
-       color: #fff;
-       opacity: 0;
-       z-index: 0;
-       &:hover {
-         opacity: 1;
-         transition-duration: 600ms;
-         color: darken(rgb(241, 102, 188), 30);
-         font-size: 31px;
-         z-index: 1;
-       }
-     }*/
 }
-#restaurant .info_card .heading_card {
+#restaurant .heading_card {
   display: flex;
   flex-direction: column;
   color: #000;
 }
-#restaurant .info_card .heading_card h3 {
+#restaurant .heading_card h3 {
   margin-top: 0px;
   margin-bottom: 0;
 }
-#restaurant .info_card .heading_card p {
+#restaurant .heading_card p {
   margin-top: 5px;
 }
-
-.fa-gradient {
+#restaurant .btn_card {
+  font-size: 29px;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #FFF;
+}
+#restaurant .btn_card .btn_heart {
+  position: relative;
+  color: #000;
+}
+#restaurant .btn_card .btn__heart {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  opacity: 0;
+  z-index: 0;
+}
+#restaurant .btn_card .btn__heart:hover {
+  opacity: 1;
+  -webkit-background-clip: text;
+  transition-duration: 600ms;
   background: linear-gradient(#e66465, #9198e5);
-  color: transparent;
+  font-size: 31px;
+  z-index: 1;
 }
 
+/*
+.fa-gradient {
+  background: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 #ico_coeur {
   display: none;
 }
 
-#ico_coeur:checked #emply_heart:hover + .ico_coeur {
-  display: none;
+#ico_coeur:checked {
+  #emply_heart {
+    &:hover + .ico_coeur {
+      display: none;
+    }
+  }
 }
-
+*/
 /* FIN DE SECTION RESTAURANTS */
 /* FOOTER */
 footer {

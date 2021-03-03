@@ -341,6 +341,7 @@ header {
       display: flex;
       justify-content: space-between;
       margin: 0px 12px;
+    }
       .heading_card {
         display: flex;
         flex-direction: column;
@@ -352,7 +353,8 @@ header {
           p {
             margin-top: 5px;
           }
-      }/*btn_card {
+      }
+      .btn_card {
         font-size: 29px;
         height: 2rem;
         width: 2rem;
@@ -366,7 +368,7 @@ header {
             position: relative;
             color: #000;
           }
-          .btn__heart {
+          .btn__heart {            
             position: absolute;
             font-size: 24px;
             color: #fff;
@@ -374,20 +376,21 @@ header {
             z-index: 0;
             &:hover {
               opacity: 1;
+              -webkit-background-clip: text;
               transition-duration: 600ms;
-              color: darken(rgb(241, 102, 188), 30);
+              background: linear-gradient(#e66465, #9198e5);
               font-size: 31px;
               z-index: 1;
             }
-          }*/
+          }
       }
     
 }
 
-
+/*
 .fa-gradient {
   background: linear-gradient(#e66465, #9198e5);
-  //-webkit-background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 #ico_coeur {
@@ -400,8 +403,8 @@ header {
       display: none;
     }
   }
-
 }
+*/
 /* FIN DE SECTION RESTAURANTS */
 
 
