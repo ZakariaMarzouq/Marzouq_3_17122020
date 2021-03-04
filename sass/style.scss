@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   font-family: $police_secondaire;
 }
@@ -69,7 +69,7 @@ $anim-delay: $anim-dur / $num-items;
   justify-content: center;
   align-items: center;
   background: #353535;
-  width: 100%;
+  width: 100vw;
   max-height: 100%;
   top: 0;
   bottom: 0;
@@ -157,7 +157,7 @@ header {
       padding-left: 100px;
     }
     input {
-      width: 100%;
+      width: 100vw;
       height: 50px;
       text-align: center;
       font-size: 0.9rem;
@@ -193,7 +193,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 220px;
+      width: 60%;
       height: 70px;
       border: none;
       border-radius: 100px;
@@ -219,7 +219,7 @@ header {
         bottom: 0;
         left: 0;
         background: linear-gradient(#ff79da, #9356dc);
-        box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 50%);
+        box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 40%);
         opacity: 0.7;
         z-index: -1;
         transition: opacity 250ms;
@@ -294,7 +294,7 @@ header {
 #restaurant {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  //width: 100%;
   background: rgb(246, 246, 246);
     h2 {
       margin: 45px 0 20px 20px;
@@ -445,19 +445,22 @@ footer {
         padding-left: 80px;
       }
     }
+    .section_explore {
+      .btn {
+        width: 65%;
+        height: 60px;
+      }
+    }
   }
 
   .filtres_cat {
     .cat {
-      width: 280px;
+      width: 85%;
     }
   }
 
   #restaurant {
     .resultat_rest {
-      .btn_heart {
-        margin-right: 30px;
-      }
       .card {
         width: 300px;
       }
@@ -479,6 +482,11 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .container_loader {
+    .loader {
+      width: 45%;
+    }
+  }
   header {
     .maps {
       .fa-map-marker-alt {
@@ -487,6 +495,10 @@ footer {
     }
     .section_explore {
       height: 250px;
+      .btn {
+        width: 35%;
+        height: 70px;
+      }
     }
   }
   
@@ -528,7 +540,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-
   header {
     display: flex;
     flex-wrap: wrap;
@@ -554,8 +565,9 @@ footer {
               }
           }
           .fa-map-marker-alt {
-            padding: 110px;
+            padding-left: 17px;
             color: #000;
+            font-size: 1.5rem;
           }
       }
       .section_explore {
@@ -610,11 +622,31 @@ footer {
       }
     }
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      padding: 0px;
+      margin: 0px;
+    }
+    ul {
+      padding: 0px;
+      font-size: 1.3rem;
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) { 
   .filtres {
+    padding: 0 8%;
+    h2 {
+      margin-left: 0px;
+      font-size: 2rem;
+    }
     .filtres_cat {
+      justify-content: space-between;
         .cat {
           width: 380px;
           height: 160px;
@@ -627,53 +659,92 @@ footer {
   }
 
   #restaurant {
+    padding: 0 8%;
+    h2 {
+      margin: 0;
+      padding: 45px 0;
+      font-size: 2rem;
+    }
     .resultat_rest {
+      justify-content: space-between;
       .card {
-        width: 500px;
+        width: 550px;
+        height: 400px;
+        .img_card {
+          height: 315px;
+        }
+        .info_card {
+          font-size: 1.3rem;
+        }
+      }
+      .btn_card {
+        padding-right: 1rem;
+        padding-top: .5rem;
+        font-size: 40px;
+        .btn__heart {            
+          &:hover {
+            font-size: 42px;
+          }
+        }
       }
       .class {
-        margin-left: 400px;
+        margin-left: 440px;
+        width: 90px;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 0.2rem;
+        margin-bottom: 345px;
       }
     }
   }
 
 }
 
-@media screen and (min-width: 1500px) {
-  .resultat_rest {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  .filtres {
-    .filtres_cat {
-      padding-left: 10%;
-      padding-right: 10%;
+@media screen and (min-width: 1700px) {
+  header {
+    .logo {
+      padding: 2rem;
+      font-size: 4rem;
+    }
+    .section_explore {
+      padding: 1.5rem;
+      .heading_explore {
+        font-size: 2rem;
+      }
     }
   }
   #restaurant {
     .resultat_rest {
-      padding-left: 10%;
-      padding-right: 10%;
       .card {
-        width: 600px;
-        height: 350px;
-        justify-content: space-between;
-        .class {
-          margin-left: 480px;
-          width: 100px;
-          height: 40px;
-          font-size: 1.2rem;
-        }
-        .img_card {
-          height: 270px;
-        }
-        .heading_card {
-          font-size: 1.3rem;
-          margin-left: 15px;
-        }
+        width: 650px;
+      }
+      .class {
+        margin-left: 535px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  header {
+    .section_explore {
+      padding: 3rem;
+      .heading_explore {
+        font-size: 2.5rem;
+        margin-top: 0;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  #restaurant {
+    .resultat_rest {
+      .card {
+        width: 750px;
+      }
+      .class {
+        margin-left: 635px;
       }
     }
   }
