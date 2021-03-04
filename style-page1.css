@@ -47,6 +47,10 @@ li {
   justify-content: center;
 }
 
+img {
+  object-fit: cover;
+}
+
 /* SECTION MENU */
 #menu {
   display: flex;
