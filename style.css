@@ -328,7 +328,7 @@ header .section_explore .btn::after {
 }
 #restaurant .btn_card .btn_heart {
   position: relative;
-  color: #000;
+  color: #413f3f;
 }
 #restaurant .btn_card .btn__heart {
   position: absolute;
@@ -338,29 +338,16 @@ header .section_explore .btn::after {
 }
 #restaurant .btn_card .btn__heart:hover {
   opacity: 1;
-  transition-duration: 600ms;
-  color: #e664d0;
-  font-size: 31px;
+  transition-duration: 550ms;
+  color: transparent;
+  font-size: 33px;
 }
 
-/*
 .fa-gradient {
   background: linear-gradient(#e66465, #9198e5);
   -webkit-background-clip: text;
-  color: transparent;
-}
-#ico_coeur {
-  display: none;
 }
 
-#ico_coeur:checked {
-  #emply_heart {
-    &:hover + .ico_coeur {
-      display: none;
-    }
-  }
-}
-*/
 /* FIN DE SECTION RESTAURANTS */
 /* FOOTER */
 footer {

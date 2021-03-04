@@ -47,6 +47,10 @@ li {
   justify-content: center;
 }
 
+img {
+  object-fit: cover;
+}
+
 /* SECTION MENU */
 #menu {
   display: flex;
@@ -88,9 +92,14 @@ li {
 }
 #menu .heading_menu .btn_card .btn__heart:hover {
   opacity: 1;
-  transition-duration: 600ms;
-  color: #FF79DA;
-  font-size: 31px;
+  transition-duration: 450ms;
+  color: transparent;
+  font-size: 35px;
+}
+
+.fa-gradient {
+  background: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
 }
 
 .card_menu {

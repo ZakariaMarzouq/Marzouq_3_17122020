@@ -59,6 +59,10 @@ li {
   }
 }
 
+img {
+  object-fit: cover;
+}
+
 /* SECTION MENU */
 
 #menu {
@@ -97,14 +101,19 @@ li {
           opacity: 0;
           &:hover {
             opacity: 1;
-            transition-duration: 600ms;
-            color: $color_secondaire;
-            font-size: 31px;
+            transition-duration: 450ms;
+            color: transparent;
+            font-size: 35px;
           }
         }
     }
   }
-}  
+}
+
+.fa-gradient {
+  background: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+}
 
 .card_menu {
   margin-bottom: 20px;
