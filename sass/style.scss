@@ -639,6 +639,11 @@ footer {
 }
 
 @media screen and (min-width: 1440px) { 
+  .container_loader {
+    .loader {
+      width: 15%;
+    }
+  }
   .filtres {
     padding: 0 8%;
     h2 {

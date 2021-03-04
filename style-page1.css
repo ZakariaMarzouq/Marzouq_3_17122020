@@ -295,12 +295,69 @@ footer ul a {
 
 @media screen and (min-width: 600px) {
   #menu {
-    padding: 70px;
+    width: 80%;
+    margin: -50% 10% 10% 10%;
+    border-radius: 50px;
+    box-shadow: 1px 3px 8px #bbbbbb;
+    background: #f6f6f6b3;
+  }
+  #menu .heading_menu {
+    padding: 20px;
+  }
+  #menu .card_menu {
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 700px) {
+  .header .logo {
+    margin-left: -70px;
+  }
+
   #menu {
-    padding: 100px;
+    width: 70%;
+    padding: 0 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header .logo {
+    margin-left: -100px;
+  }
+
+  #menu {
+    width: 50%;
+    padding: 0 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 130px;
+    align-items: center;
+  }
+  .header .logo {
+    font-size: 2rem;
+    margin-left: -120px;
+  }
+
+  #menu {
+    padding: 0;
+    width: 94%;
+    margin: -60% 3% 10% 3%;
+  }
+  #menu .heading_menu {
+    padding: 0px 36%;
+    background: #ffffffc7;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  #menu .heading_menu h2 {
+    font-size: 1.8rem;
+  }
+  #menu .cards_menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  #menu .cards_menu .card_menu {
+    width: 30%;
   }
 }
 
