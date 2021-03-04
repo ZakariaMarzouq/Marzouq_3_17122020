@@ -39,16 +39,12 @@ li {
 
 .header {
   display: flex;
-  margin-right: 5%;
-  margin-left: 5%;
   height: 65px;
-  width: 90%;
   .btn_return {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%; 
-    height: 60px;
+    width: 10%; 
     background-color: white;
     .fa-arrow-left {
       font-size: 1.2rem;
@@ -56,9 +52,7 @@ li {
     }
   }
   .logo {
-    width: 80%;
-    height: 60px;
-    margin-left: -30px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,8 +327,24 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-  .header .logo {
-    margin-left: -70px;
+  .header {
+    align-items: center;
+    .btn_return {
+      cursor: pointer;
+      background: $color_tertiaire;
+      width: 10%;
+      height: 65px;      
+      .bouton i {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+    .logo {
+      font-size: 1rem;
+      margin-left: 0px;
+      background: #f2f2f2;
+
+    }
   }
   #menu {
   width: 70%;
@@ -343,31 +353,38 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  .header .logo {
-    margin-left: -100px;
+  .header {
+    height: 80px;
+    .btn_return {
+      height: 80px;      
+    }
+    .logo {
+      font-size: 1.2rem;
+    }
   }
   #menu {
-  width: 50%;
-  padding: 0 15%;
+    width: 50%;
+    padding: 0 15%;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  
   .header {
-    height: 130px;
-    align-items: center;
+    height: 80px;
+    .btn_return {
+      height: 80px;      
+    }
     .logo {
-      font-size: 2rem;
-      margin-left: -120px;
+      font-size: 1.5rem;
     }
   }
-
   #menu {
     padding: 0;
     width: 94%;
-    margin: -60% 3% 10% 3%;
+    margin: -58% 3% 10% 3%;
     .heading_menu {
-      padding: 0px 36%;
+      padding: 0px 34%;
       background: #ffffffc7;
       border-top-left-radius: 50px;
       border-top-right-radius: 50px;
@@ -383,4 +400,21 @@ footer {
       }
     }
   }
+  footer {
+    height: 280px;
+    h1{
+      font-size: 2rem;
+      margin-top: 0;
+    }
+  }
 }
+
+@media screen and (min-width: 1900px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+  }
+}
+
