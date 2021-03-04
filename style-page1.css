@@ -47,10 +47,6 @@ li {
   justify-content: center;
 }
 
-img {
-  object-fit: cover;
-}
-
 /* SECTION MENU */
 #menu {
   display: flex;
@@ -366,9 +362,10 @@ footer ul a {
   #menu {
     padding: 0;
     width: 94%;
-    margin: -58% 3% 10% 3%;
+    margin: -64% 3% 10% 3%;
   }
   #menu .heading_menu {
+    justify-content: space-around;
     padding: 0px 34%;
     background: #ffffffc7;
     border-top-left-radius: 50px;
