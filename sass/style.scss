@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Variable */
+/* Variable GENERAL */
 $police_primaire:'Shrikhand';
 $police_secondaire :'ROBOTO';
 $color_primaire: #9356DC;
@@ -63,7 +63,6 @@ $anim-delay: $anim-dur / $num-items;
   }
 }
 
-
 .container_loader {
   display: flex;
   justify-content: center;
@@ -75,14 +74,6 @@ $anim-delay: $anim-dur / $num-items;
   bottom: 0;
   position: fixed;
   animation: loader 10ms ease-out 3000ms forwards;
-  //animation-name: loader;
-  //animation-duration: 10ms;
-  //animation-timing-function: ease-out;
-  //animation-delay: 3000ms;
-  //animation-iteration-count: 1;
-  //animation-direction: normal;
-  //animation-fill-mode: forwards;
-  //animation-play-state: running;
 }
 
 .loader {
@@ -117,21 +108,10 @@ $anim-delay: $anim-dur / $num-items;
   }
 }
 
-
 .homepage {
   opacity: 1;
   animation: page-visibility 10ms ease-in 3000ms both;
-  //animation-name: page-visibility;
-  //animation-duration: 10ms;
-  //animation-timing-function: ease-in;
-  //animation-delay: 3000ms;
-  //animation-iteration-count: 1;
-  //animation-direction: normal;
-  //animation-fill-mode: both;
-  //animation-play-state: running;
-  
 }
-
 /* FIN DU LOADER */
 
 /* SECTION HEADER */
@@ -194,7 +174,7 @@ header {
       justify-content: center;
       align-items: center;
       width: 60%;
-      height: 70px;
+      height: 60px;
       border: none;
       border-radius: 100px;
       background-color: $color_primaire;
@@ -207,7 +187,7 @@ header {
       z-index: 1;
       &:hover {
         &::after {
-            opacity: 1;
+          opacity: 1;
         }
       }
       &::after {
@@ -218,7 +198,7 @@ header {
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient(#ff79da, #9356dc);
+        background: linear-gradient($color_secondaire, $color_primaire);
         box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 40%);
         opacity: 0.7;
         z-index: -1;
@@ -294,7 +274,6 @@ header {
 #restaurant {
   display: flex;
   flex-direction: column;
-  //width: 100%;
   background: rgb(246, 246, 246);
     h2 {
       margin: 45px 0 20px 20px;
@@ -366,7 +345,6 @@ header {
         position: relative;
         background-color: #FFF;
           .btn_heart {
-            //transform: rotateY(40deg);
             position: relative;
             color: rgb(65, 63, 63);
           }
@@ -375,7 +353,6 @@ header {
             font-size: 24px;
             color: #fff;
             opacity: 0;
-            //transform: rotateY(40deg);
             &:hover {
               opacity: 1;
               transition-duration: 550ms;
@@ -390,9 +367,7 @@ header {
   background: linear-gradient(#e66465, #9198e5);
   -webkit-background-clip: text;
 }
-
 /* FIN DE SECTION RESTAURANTS */
-
 
 /* FOOTER */
 footer {

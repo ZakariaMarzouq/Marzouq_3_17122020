@@ -36,7 +36,6 @@ li {
 }
 
 /* HEADER */
-
 .header {
   display: flex;
   height: 65px;
@@ -64,7 +63,6 @@ img {
 }
 
 /* SECTION MENU */
-
 #menu {
   display: flex;
   flex-direction: column;
@@ -236,8 +234,6 @@ img {
   transition-duration: 450ms;
   position: relative;
   margin-right: -64px;
-
-
   .ico_check {
     color: #fff;
     font-size: 2rem;
@@ -245,7 +241,6 @@ img {
 }
 
 /* CALL TO ACTION */
-
 .btn_valid {
   margin-bottom: 50px;
   display: flex;
@@ -288,7 +283,6 @@ img {
   }
 
 }
-
 /* FOOTER */
 
 footer {
@@ -328,7 +322,6 @@ footer {
     .heading_menu {
       padding: 20px;
     }
-
     .card_menu {
       margin-top: 40px;
     }
@@ -352,7 +345,6 @@ footer {
       font-size: 1rem;
       margin-left: 0px;
       background: #f2f2f2;
-
     }
   }
   #menu {
