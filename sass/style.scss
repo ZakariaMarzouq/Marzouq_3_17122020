@@ -364,7 +364,7 @@ header {
 }
 
 .fa-gradient {
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient($color_primaire, $color_secondaire);
   -webkit-background-clip: text;
 }
 /* FIN DE SECTION RESTAURANTS */

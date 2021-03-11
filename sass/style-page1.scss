@@ -101,7 +101,7 @@ img {
             opacity: 1;
             transition-duration: 450ms;
             color: transparent;
-            font-size: 35px;
+            font-size: 33px;
           }
         }
     }
@@ -109,7 +109,7 @@ img {
 }
 
 .fa-gradient {
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient($color_primaire, $color_secondaire);
   -webkit-background-clip: text;
 }
 
@@ -170,7 +170,6 @@ img {
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
-  
   &:hover {
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 40%);
     .box_check {
@@ -178,7 +177,6 @@ img {
       transform: scale(0);
       transition-duration: 650ms;
       transform: translateX(-64px);
-
     } 
     .ico_check {
       transform: rotate(-360deg);
@@ -193,11 +191,9 @@ img {
   align-items: center;
   overflow: hidden;
   padding: 0.5rem;
-
   .info_card {
     overflow: hidden;
   }
-
   .card_title, .card_description {
     margin: 0px;
     overflow: hidden;
@@ -281,10 +277,9 @@ img {
       transition: opacity 250ms;
     }
   }
-
 }
-/* FOOTER */
 
+/* FOOTER */
 footer {
   height: 250px;
   background: rgb(53, 53 , 53);
@@ -418,4 +413,3 @@ footer {
     height: 350px;
   }
 }
-

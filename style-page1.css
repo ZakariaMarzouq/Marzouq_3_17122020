@@ -94,11 +94,11 @@ img {
   opacity: 1;
   transition-duration: 450ms;
   color: transparent;
-  font-size: 35px;
+  font-size: 33px;
 }
 
 .fa-gradient {
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
 }
 

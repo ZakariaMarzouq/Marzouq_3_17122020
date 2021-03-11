@@ -344,7 +344,7 @@ header .section_explore .btn::after {
 }
 
 .fa-gradient {
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
 }
 
